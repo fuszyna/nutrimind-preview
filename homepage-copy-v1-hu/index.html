@@ -3797,7 +3797,7 @@ function scan() {
   if(!norm(heading.textContent).endsWith('Just natural vitality, backed by science.')) continue;
   if(!heading.nextElementSibling?.matches('[data-nm-inserted]')) {
    const p=document.createElement('p');p.className='nm-slogan';p.dataset.nmInserted='12';
-   p.textContent='Az energia, ami összeköt.';
+   p.textContent='Ez a Nutrimind: az energia, ami összeköt minket.';
    const accent=heading.querySelector('strong') || heading;
    p.style.color=getComputedStyle(accent).color;
    p.style.fontSize=(parseFloat(getComputedStyle(heading).fontSize)*1.08)+'px';
@@ -3909,7 +3909,7 @@ function start() {
   const rows=changes.filter(c=>c[0]===n), li=document.createElement('li'),btn=document.createElement('button');
   btn.type='button';
   const short=s=>s.length>65?s.slice(0,62)+'…':s;
-  btn.textContent=n===9?'#9 · Reviews — Removed from homepage: B. Z. review (lab value) and P. R. review (innuendo)':n===11?'#11 · Experts — Hidden until real experts are confirmed':n===12?'#12 · About — No slogan → Az energia, ami összeköt.':`#${n} · ${rows[0][1]} — ${rows.map(c=>short(c[2])+' → '+short(c[3])).join('; ')}`;
+  btn.textContent=n===9?'#9 · Reviews — Removed from homepage: B. Z. review (lab value) and P. R. review (innuendo)':n===11?'#11 · Experts — Hidden until real experts are confirmed':n===12?'#12 · About — No slogan → Ez a Nutrimind: az energia, ami összeköt minket.':`#${n} · ${rows[0][1]} — ${rows.map(c=>short(c[2])+' → '+short(c[3])).join('; ')}`;
   btn.addEventListener('click',()=>go(n));li.append(btn);
   if(n===9 || n===11) {
    const details=document.createElement('details'),summary=document.createElement('summary'),p=document.createElement('p');
