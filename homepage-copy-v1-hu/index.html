@@ -1619,8 +1619,8 @@ first.parentNode.insertBefore(script, first);
 #PBarNextFrameWrapper,#PBarNextFrame{display:none!important}
 #weglot-switcher-1 #weglot-listbox{top:auto!important;bottom:100%!important;z-index:2147483647!important}
 .comparison-table__mark--varies .nm-tilde{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:#e8e3d8;color:#8a7f66;font-weight:700;font-size:13px;line-height:1;}
-html[data-nm-mode="changes"] .nm-chg {outline:3px solid #16a34a!important;outline-offset:3px!important;background-color:rgba(22,163,74,.10)!important;}
-html[data-nm-mode="changes"] .nm-chg::before {content:attr(data-nm);position:absolute;top:-14px;left:-12px;min-width:24px;height:24px;padding:0 4px;border-radius:999px;background:#16a34a;color:white;font:bold 13px/24px system-ui;text-align:center;z-index:20;pointer-events:none;}
+html[data-nm-mode="changes"] .nm-chg:not(.visually-hidden) {outline:3px solid #16a34a!important;outline-offset:3px!important;background-color:rgba(22,163,74,.10)!important;}
+html[data-nm-mode="changes"] .nm-chg:not(.visually-hidden)::before {content:attr(data-nm);position:absolute;top:-14px;left:-12px;min-width:24px;height:24px;padding:0 4px;border-radius:999px;background:#16a34a;color:white;font:bold 13px/24px system-ui;text-align:center;z-index:20;pointer-events:none;}
 html:not([data-nm-mode="original"]) [data-nm-hidden] {display:none!important;}
 html:not([data-nm-mode="changes"]) .nm-placeholder {display:none!important;}
 html[data-nm-mode="original"] [data-nm-inserted] {display:none!important;}
@@ -3745,7 +3745,7 @@ function matches(before) {
 function mark(e,n,before) {
  e.classList.add('nm-chg'); e.dataset.nm = String(n); e.dataset.before = before;
  e.dataset.nmProcessed = 'true';
- if(getComputedStyle(e).position === 'static') e.style.position = 'relative';
+ if(!e.classList.contains('visually-hidden') && getComputedStyle(e).position === 'static') e.style.position = 'relative';
 }
 function register(e,n,after,kind='text') {
  if(records.has(e)) return;
@@ -3760,9 +3760,7 @@ function register(e,n,after,kind='text') {
  } else if(n===10 && before.startsWith('Tested by')) {
   clone.innerHTML='Az <strong>Eurofins</strong> akkreditált laborjában bevizsgálva.';
  } else if(kind==='text') clone.textContent=after;
- const hiddenClass=e.dataset.nmWasVisuallyHidden==='true' || e.classList.contains('visually-hidden');
- if(n===6) e.dataset.nmWasVisuallyHidden=String(hiddenClass);
- const r={n, original, updated:clone.innerHTML, before, kind, hiddenClass};
+ const r={n, original, updated:clone.innerHTML, before, kind};
  records.set(e,r); mark(e,n,before);
 }
 function scan() {
@@ -3810,7 +3808,6 @@ function scan() {
   if(r.kind==='hide') continue;
   const wanted=mode==='original'?r.original:r.updated;
   if(e.innerHTML!==wanted) e.innerHTML=wanted;
-  if(r.n===6 && r.hiddenClass) e.classList.toggle('visually-hidden',mode==='original');
   if(r.n===13 || r.n===14) {
    const d=e.closest('details'); if(d) {d.open=true;d.querySelector('summary')?.setAttribute('aria-expanded','true');}
   }
