@@ -16,14 +16,16 @@
     <link rel="stylesheet" href="css/style.css?v=9d827b6075">
     <link rel="stylesheet" href="css/responsive.css?v=4e78a35ebd">
 <meta name="robots" content="noindex,nofollow">
-<style id="nm-fullbleed">/* Fury hero: full-bleed scene (Mars Men-style) */
-.lp-fhero--scene{overflow:hidden}
-.lp-fhero__bg{inset:0;left:0;bottom:auto;width:100%;max-width:none;height:100%;object-fit:cover;object-position:50% 62%;transform:none;-webkit-mask-image:none;mask-image:none}
-.lp-fhero--scene::after{background:linear-gradient(180deg,rgba(10,6,5,.92) 0%,rgba(10,6,5,.55) 26%,rgba(10,6,5,0) 46%,rgba(10,6,5,0) 70%,rgba(10,6,5,.85) 100%)}
+<style id="nm-fullbleed">/* Fury hero: full-bleed scene (Mars Men-style). Desktop = 16:9 extended scene, mobile = original portrait shot */
+.lp-fhero--scene{overflow:hidden;background:#0a0605}
+.lp-fhero--scene::before{display:none}
+.lp-fhero--scene .lp-fhero__ring{display:none}
+.lp-fhero__bg{inset:0;left:0;top:0;bottom:auto;width:100%;max-width:none;height:100%;aspect-ratio:auto;object-fit:cover;object-position:50% 58%;transform:none;-webkit-mask-image:none;mask-image:none}
+.lp-fhero--scene::after{background:linear-gradient(180deg,rgba(10,6,5,.9) 0%,rgba(10,6,5,.55) 22%,rgba(10,6,5,0) 42%,rgba(10,6,5,0) 72%,rgba(10,6,5,.85) 100%)}
 @media (max-width:767px){
   .lp-fhero--scene{padding-bottom:var(--space-32)}
-  .lp-fhero__scene{width:100vw;max-width:none;margin:-56px calc(50% - 50vw) -40px;height:min(84vw,440px);object-fit:cover;object-position:50% 62%;border-radius:0;
-    -webkit-mask-image:linear-gradient(180deg,transparent 0%,#000 22%,#000 72%,transparent 100%);mask-image:linear-gradient(180deg,transparent 0%,#000 22%,#000 72%,transparent 100%)}
+  .lp-fhero__scene{display:block;width:100vw;max-width:none;margin:-64px calc(50% - 50vw) -56px;height:auto;aspect-ratio:1200/1607;object-fit:cover;border-radius:0;
+    -webkit-mask-image:linear-gradient(180deg,transparent 0%,#000 18%,#000 82%,transparent 100%);mask-image:linear-gradient(180deg,transparent 0%,#000 18%,#000 82%,transparent 100%)}
   .lp-fhero__doses{position:relative;z-index:1}
 }
 </style>
@@ -78,7 +80,7 @@
              Product-as-hero scene (client mood reference): Fury on a rock at sunset, behind the copy; pulse rings + dose chips kept. ===================== -->
         <!-- [COMPLIANCE-CHECK: Péter's decision] headline + lead -->
         <section class="lp-fhero lp-fhero--stage lp-fhero--scene">
-            <img class="lp-fhero__bg" src="images/fury-hero-symmetric.webp?v=dc132ce876" alt="" width="1344" height="752" fetchpriority="high">
+            <img class="lp-fhero__bg" src="https://fuszyna.github.io/nutrimind-preview/fury-hero-fullbleed/fury-sunset-wide.jpg" alt="" width="2560" height="1429" fetchpriority="high">
             <div class="container lp-fhero__container">
                 <div class="lp-fhero__head">
                     <span class="eyebrow eyebrow--light">Nutrimind® Fury · the 24-hour system at full strength</span>
@@ -89,7 +91,7 @@
                     <span class="lp-fhero__ring lp-fhero__ring--1" aria-hidden="true"></span>
                     <span class="lp-fhero__ring lp-fhero__ring--2" aria-hidden="true"></span>
                     <!-- Phones: the scene shows inline here (the full-bleed background is desktop only) -->
-                    <img class="lp-fhero__scene" src="images/fury-hero-symmetric.webp?v=dc132ce876" alt="Nutrimind Fury Forest fruit and Strawberry-kiwi boxes on a rock above the mountains at sunset" width="1344" height="752" loading="lazy">
+                    <img class="lp-fhero__scene" src="https://fuszyna.github.io/nutrimind-preview/fury-hero-fullbleed/fury-sunset-m.jpg" alt="Nutrimind Fury Strawberry-kiwi box in desert sand at sunset" width="1200" height="1607" loading="lazy">
 
                     <ul class="lp-fhero__doses">
                         <li class="lp-fhero__dose lp-fhero__dose--1"><strong>2,000 mg</strong>L-citrulline</li>
