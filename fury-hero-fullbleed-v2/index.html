@@ -19,10 +19,10 @@
 <style id="nm-fullbleed">/* Fury hero v2: dark blue rock scene, full-bleed */
 .lp-fhero--scene{overflow:hidden;background:#040a16}
 .lp-fhero--scene::before{display:block;content:"";position:absolute;inset:-60px;z-index:-2;background:url(https://fuszyna.github.io/nutrimind-preview/fury-hero-fullbleed-v2/fury-dark.png) center 55%/cover no-repeat;filter:blur(36px) brightness(.55) saturate(1.1);opacity:1;-webkit-mask-image:none;mask-image:none}
-.lp-fhero__bg{inset:0;left:50%;bottom:auto;width:auto;max-width:none;height:100%;aspect-ratio:504/678;object-fit:cover;transform:translateX(-50%);
+.lp-fhero__bg{top:auto;left:50%;bottom:0;width:auto;max-width:none;height:84%;aspect-ratio:504/678;object-fit:cover;transform:translateX(-50%);
   -webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 22%,#000 78%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0%,#000 22%,#000 78%,transparent 100%)}
-.lp-fhero--scene::after{background:linear-gradient(180deg,rgba(4,10,22,.95) 0%,rgba(4,10,22,.7) 24%,rgba(4,10,22,0) 46%,rgba(4,10,22,0) 72%,rgba(4,10,22,.9) 100%)}
-.lp-fhero--scene .lp-fhero__ring{border-color:rgba(140,180,255,.35)}
+.lp-fhero--scene::after{background:linear-gradient(180deg,rgba(4,10,22,.95) 0%,rgba(4,10,22,.7) 24%,rgba(4,10,22,0) 46%,rgba(4,10,22,0) 68%,rgba(4,10,22,.75) 100%)}
+.lp-fhero--scene .lp-fhero__ring{display:none}
 @media (max-width:767px){
   .lp-fhero--scene::before{display:none}
   .lp-fhero--scene{padding-bottom:var(--space-32)}
