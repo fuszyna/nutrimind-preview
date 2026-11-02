@@ -443,7 +443,7 @@ html[data-nm-mode="changes"] .nm-chg::before {content:attr(data-nm);position:abs
                         <div class="plp-promo__content">
                             <span class="eyebrow eyebrow--light">The 24-hour system</span>
                             <h3 class="plp-promo__title">One formula for the day, another for the night.</h3>
-                            <p class="plp-promo__text">Packages cost less than buying separately, and 2- and 3-month packages come with a 60-day money-back guarantee.</p>
+                            <p class="plp-promo__text"><span class="nm-chg" data-nm="5" data-before="Packages cost less than buying separately, and 2- and 3-month packages come with a 60-day money-back guarantee.">Packages are better value than buying the products separately, and 2- and 3-month packages come with a 60-day money-back guarantee.</span></p>
                             <a href="./?filter=bundle" class="btn btn--light" data-filter-link="bundle">Shop packages <i class="ph-bold ph-caret-right"></i></a>
                         </div>
                     </aside>
@@ -794,16 +794,44 @@ html[data-nm-mode="changes"] .nm-chg::before {content:attr(data-nm);position:abs
     }, true);
 })();
 </script>
+<script id="nm-guide-script">
+(() => {
+    // "How to choose" follows the product filter: the women's Day formula is a drink powder only,
+    // and the section does not apply to DROP electrolytes, so it is hidden there.
+    const DAY = 'Taken in the morning, for long and demanding days. Capsules or a drink powder.';
+    const texts = {
+        all: 'Taken in the morning, for long and demanding days. For men as capsules or a drink powder, for women as a drink powder.',
+        bundle: 'Taken in the morning, for long and demanding days. For men as capsules or a drink powder, for women as a drink powder.',
+        men: DAY,
+        women: 'Taken in the morning, for long and demanding days. A drink powder, in two flavours.',
+    };
+    const section = document.querySelector('.plp-guide');
+    const day = section?.querySelector('.plp-guide__step p');
+    if (!section || !day) return;
+    function update() {
+        const filter = document.querySelector('[data-filter].is-active')?.dataset.filter || 'all';
+        const hide = filter === 'drop';
+        section.style.display = hide ? 'none' : '';
+        const wanted = texts[filter] || texts.all;
+        if (!hide && day.dataset.nmGuide !== filter) {
+            day.dataset.nmGuide = filter; day.textContent = wanted;
+        }
+    }
+    new MutationObserver(update).observe(document.querySelector('[data-filter]')?.parentElement || document.body,
+        {subtree: true, attributes: true, attributeFilter: ['class']});
+    update();
+})();
+</script>
 <script id="nm-copy-script">
 (() => {
-    const changes = [[1, "Announcement bar", "Take it for 60 days. Not satisfied? Get your money back", "Take any bundle for 60 days. Not satisfied? Get your money back"], [2, "Product names", "Men Complex Night Pro", "Men Complex Night"], [2, "Product names", "Men Complex Day Fury", "Fury"], [2, "Product names", "Premium Male Power Package", "Premium Male Vitality Pack"], [2, "Product names", "Extreme Male Power Package", "Extreme Male Vitality Pack"], [2, "Product names", "Women Complex Day & Night", "Women Complex Day & Night Pack"], [2, "Product names", "Premium Vitality Bundle", "Premium Male Vitality Pack"], [2, "Product names", "Day & Night Bundle", "Women Complex Day & Night Pack"], [3, "Card subtitles", "Day in the morning, Night Pro at bedtime", "Day in the morning, Night at bedtime"], [3, "Card subtitles", "Day Fury by day, Night Pro by night", "Fury by day, Night by night"], [4, "Prices & savings", "10,990 Ft", "11,990 Ft"], [4, "Prices & savings", "7,990 Ft", "8,990 Ft"], [4, "Prices & savings", "12,990 Ft", "13,990 Ft"], [4, "Prices & savings", "15,990 Ft", "16,990 Ft"], [4, "Prices & savings", "18,980 Ft", "20,980 Ft"], [4, "Prices & savings", "16,990 Ft", "17,990 Ft"], [4, "Prices & savings", "from HUF 15,990", "from HUF 16,990"], [4, "Prices & savings", "Save up to 25%", "Save 19%"]], attributes = {"Men Complex Night Pro bottle": "Men Complex Night bottle", "Men Complex Day Fury drink powder box": "Fury drink powder box", "Men Complex Day Fury box": "Fury box", "Men Complex Day and Night Pro bottles": "Men Complex Day and Night bottles", "Men Complex Night Pro under a moonlit sky": "Men Complex Night under a moonlit sky", "Add Premium Male Power Package to cart": "Add Premium Male Vitality Pack to cart", "Add Men Complex Day Fury to cart": "Add Fury to cart", "Add Men Complex Night Pro to cart": "Add Men Complex Night to cart", "Add Extreme Male Power Package to cart": "Add Extreme Male Vitality Pack to cart", "Add Women Complex Day and Night to cart": "Add Women Complex Day & Night Pack to cart"};
+    const changes = [[1, "Announcement bar", "Take it for 60 days. Not satisfied? Get your money back", "Take any bundle for 60 days. Not satisfied? Get your money back"], [2, "Product names", "Men Complex Night Pro", "Men Complex Night"], [2, "Product names", "Men Complex Day Fury", "Fury"], [2, "Product names", "Premium Male Power Package", "Premium Male Vitality Pack"], [2, "Product names", "Extreme Male Power Package", "Extreme Male Vitality Pack"], [2, "Product names", "Women Complex Day & Night", "Women Complex Day & Night Pack"], [2, "Product names", "Premium Vitality Bundle", "Premium Male Vitality Pack"], [2, "Product names", "Day & Night Bundle", "Women Complex Day & Night Pack"], [3, "Card subtitles", "Day in the morning, Night Pro at bedtime", "Day in the morning, Night at bedtime"], [3, "Card subtitles", "Day Fury by day, Night Pro by night", "Fury by day, Night by night"], [4, "Prices & savings", "10,990 Ft", "11,990 Ft"], [4, "Prices & savings", "7,990 Ft", "8,990 Ft"], [4, "Prices & savings", "12,990 Ft", "13,990 Ft"], [4, "Prices & savings", "15,990 Ft", "16,990 Ft"], [4, "Prices & savings", "18,980 Ft", "20,980 Ft"], [4, "Prices & savings", "16,990 Ft", "17,990 Ft"], [4, "Prices & savings", "from HUF 15,990", "from HUF 16,990"], [4, "Prices & savings", "Save up to 25%", "Save 19%"], [5, "Promo tile", "Packages cost less than buying separately, and 2- and 3-month packages come with a 60-day money-back guarantee.", "Packages are better value than buying the products separately, and 2- and 3-month packages come with a 60-day money-back guarantee."]], attributes = {"Men Complex Night Pro bottle": "Men Complex Night bottle", "Men Complex Day Fury drink powder box": "Fury drink powder box", "Men Complex Day Fury box": "Fury box", "Men Complex Day and Night Pro bottles": "Men Complex Day and Night bottles", "Men Complex Night Pro under a moonlit sky": "Men Complex Night under a moonlit sky", "Add Premium Male Power Package to cart": "Add Premium Male Vitality Pack to cart", "Add Men Complex Day Fury to cart": "Add Fury to cart", "Add Men Complex Night Pro to cart": "Add Men Complex Night to cart", "Add Extreme Male Power Package to cart": "Add Extreme Male Vitality Pack to cart", "Add Women Complex Day and Night to cart": "Add Women Complex Day & Night Pack to cart"};
     const norm = text => text.replace(/\s+/g, ' ').trim();
     const byBefore = new Map(changes.map(c => [norm(c[2]), c]));
     let mode = 'changes', queued = false;
     document.documentElement.dataset.nmMode = mode;
     const panel = document.createElement('aside');
     panel.id = 'nm-panel'; panel.setAttribute('aria-label', 'Copy preview controls');
-    panel.innerHTML = '<section id="nm-list" aria-labelledby="nm-title" hidden><h2 id="nm-title">Nutrimind collection page - copy update v1.3 (2 Nov 2026)</h2><p>Green outline = changed copy. Hover a change to see the original.</p><p>Removed: the &quot;Save up to 26%&quot; badges (Extreme Pack, Women Pack, women mega menu) - the live site shows no discount there. Premium Pack: 20,980 Ft separately vs 16,990 Ft = 19%.</p><ol></ol></section><div id="nm-bar"><select id="nm-mode" aria-label="Preview mode"><option value="changes">Show changes</option><option value="clean">New copy</option><option value="original">Original</option></select><button type="button" id="nm-toggle" aria-controls="nm-list" aria-expanded="false"></button></div>';
+    panel.innerHTML = '<section id="nm-list" aria-labelledby="nm-title" hidden><h2 id="nm-title">Nutrimind collection page - copy update v1.3 (2 Nov 2026)</h2><p>Green outline = changed copy. Hover a change to see the original.</p><p>Removed: the &quot;Save up to 26%&quot; badges (Extreme Pack, Women Pack, women mega menu) - the live site shows no discount there. Premium Pack: 20,980 Ft separately vs 16,990 Ft = 19%.</p><p>How to choose: the Day formula text follows the filter (women = drink powder only); the section is hidden on Electrolytes.</p><ol></ol></section><div id="nm-bar"><select id="nm-mode" aria-label="Preview mode"><option value="changes">Show changes</option><option value="clean">New copy</option><option value="original">Original</option></select><button type="button" id="nm-toggle" aria-controls="nm-list" aria-expanded="false"></button></div>';
     const groups = [...new Set(changes.map(c => c[0]))];
     const drawer = panel.querySelector('#nm-list'), toggle = panel.querySelector('#nm-toggle');
     function setOpen(open) {
