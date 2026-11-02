@@ -767,6 +767,19 @@ html[data-nm-mode="changes"] .nm-chg::before {content:attr(data-nm);position:abs
         event.stopImmediatePropagation();
         location.href = destinations[language] + location.search;
     }
+    // Floating bottom-right switch, like the Weglot switcher on the homepage preview.
+    const current = document.documentElement.lang === 'hu' ? 'HU' : 'EN', other = current === 'HU' ? 'EN' : 'HU';
+    const labels = {EN: 'English', HU: 'Magyar'};
+    const floating = document.createElement('a');
+    floating.id = 'nm-lang-float'; floating.href = destinations[other];
+    floating.setAttribute('aria-label', 'Switch to ' + labels[other]);
+    floating.innerHTML = '<span style="opacity:.55">' + labels[current] + '</span> &rarr; <strong>' + labels[other] + '</strong>';
+    floating.style.cssText = 'position:fixed;right:24px;bottom:96px;z-index:2147483645;display:flex;gap:6px;align-items:center;' +
+        'padding:10px 16px;border-radius:999px;background:#fff;color:#17251b;border:1px solid #d4ded7;' +
+        'box-shadow:0 4px 20px #0003;font:600 14px/1 system-ui;text-decoration:none;';
+    floating.addEventListener('click', event => navigate(other, event));
+    if (innerWidth < 768) floating.style.bottom = document.documentElement.dataset.nmMode ? '140px' : '96px';
+    document.body.append(floating);
     window.addEventListener('click', event => {
         const button = event.target.closest?.('.announcement__lang-btn');
         const language = button?.textContent.trim();
