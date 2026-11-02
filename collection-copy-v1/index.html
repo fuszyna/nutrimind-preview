@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-nm-mode="changes" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +15,26 @@
     <link rel="stylesheet" href="https://nutrimind-chi.vercel.app/css/style.css?v=275b386c82">
     <link rel="stylesheet" href="https://nutrimind-chi.vercel.app/css/responsive.css?v=2aac71daea">
     <meta name="robots" content="noindex,nofollow">
+<style id="nm-copy-style">
+.nm-chg {position:relative;}
+html[data-nm-mode="changes"] .nm-chg {outline:3px solid #16a34a!important;outline-offset:3px!important;background-color:rgba(22,163,74,.10)!important;}
+html[data-nm-mode="changes"] .nm-chg::before {content:attr(data-nm);position:absolute;top:-14px;left:-12px;min-width:24px;height:24px;padding:0 4px;border-radius:999px;background:#16a34a;color:white;font:bold 13px/24px system-ui;text-align:center;z-index:20;pointer-events:none;}
+#nm-panel {position:fixed;inset:auto auto 16px 16px;width:max-content;max-width:calc(100vw - 32px);background:#fff;color:#17251b;border:1px solid #d4ded7;border-radius:16px;box-shadow:0 8px 36px #0004;z-index:2147483646;font:14px/1.45 system-ui;box-sizing:border-box;}
+#nm-panel * {box-sizing:border-box;}
+#nm-panel [hidden],#nm-tooltip[hidden] {display:none!important;}
+#nm-bar {display:flex;align-items:center;gap:8px;padding:8px;}
+#nm-panel #nm-toggle {white-space:nowrap;background:#f1f8f3;border:1px solid #779781;border-radius:8px;padding:7px 9px;cursor:pointer;}
+#nm-list {position:absolute;bottom:calc(100% + 8px);left:0;width:440px;max-width:calc(100vw - 32px);max-height:60vh;overflow:auto;overscroll-behavior:contain;padding:16px;background:white;border:1px solid #d4ded7;border-radius:16px;box-shadow:0 8px 36px #0004;}
+#nm-list h2 {font:700 14px/1.45 system-ui;margin:0;}
+#nm-panel button:focus-visible,#nm-panel select:focus-visible {outline:2px solid #173f28;outline-offset:2px;}
+#nm-panel button,#nm-panel select {font:inherit;color:inherit;}
+#nm-panel select {width:auto;max-width:100%;padding:7px;background:white;border:1px solid #779781;border-radius:8px;margin:0;}
+#nm-panel ol {padding:0;list-style:none;} #nm-panel li {margin:8px 0;}
+#nm-panel li button {text-align:left;border:0;border-radius:6px;background:#f1f8f3;cursor:pointer;width:100%;padding:8px;}
+@media (max-width:767px) {#nm-panel {left:16px;right:16px;bottom:64px;width:auto;max-width:none;} #nm-bar {flex-wrap:wrap;} #nm-list {width:100%;}}
+#nm-tooltip {position:fixed;z-index:2147483647;max-width:min(440px,calc(100vw - 24px));padding:10px 14px;border-radius:8px;background:#12351f;color:#fff;font:13px/1.45 system-ui;box-shadow:0 4px 20px #0004;pointer-events:none;}
+.nm-flash {animation:nm-flash 1s ease-in-out 3;} @keyframes nm-flash {50% {box-shadow:0 0 0 10px #16a34a77;}}
+</style>
 </head>
 <!-- COLLECTION PAGE (Shopify collection template mockup). Products, prices and ratings from the live store (nutrimind.hu/collections/all).
      ?filter=men | women | bundle | drop preselects a tab, so the header links can deep-link into the grid. -->
@@ -27,7 +47,7 @@
         <div class="container announcement__container">
             <div class="announcement__track" data-rotator>
                 <p class="announcement__item is-active"><i class="ph ph-truck"></i>Free next-day GLS delivery on orders over HUF 19,000</p>
-                <p class="announcement__item"><i class="ph ph-shield-check"></i>Take it for 60 days. Not satisfied? Get your money back</p>
+                <p class="announcement__item"><i class="ph ph-shield-check"></i><span class="nm-chg" data-nm="1" data-before="Take it for 60 days. Not satisfied? Get your money back">Take any bundle for 60 days. Not satisfied? Get your money back</span></p>
                 <p class="announcement__item"><i class="ph ph-flask"></i>Every formula tested by Eurofins, an accredited laboratory</p>
             </div>
             <div class="announcement__lang">
@@ -72,15 +92,15 @@
                                             <span class="mega-product__desc">Energy, drive &amp; libido</span>
                                         </a>
                                         <a href="https://nutrimind-chi.vercel.app/product.html" class="mega-product mega-product--men-night">
-                                            <div class="mega-product__media"><img src="https://nutrimind-chi.vercel.app/images/men-complex-night-bottle.webp?v=6e7ed0e654" alt="Men Complex Night Pro bottle" loading="lazy"></div>
+                                            <div class="mega-product__media"><img src="https://nutrimind-chi.vercel.app/images/men-complex-night-bottle.webp?v=6e7ed0e654" alt="Men Complex Night bottle" loading="lazy"></div>
                                             <span class="mega-product__tag"><i class="ph-fill ph-moon"></i>Night</span>
-                                            <span class="mega-product__name">Men Complex Night Pro</span>
+                                            <span class="mega-product__name"><span class="nm-chg" data-nm="2" data-before="Men Complex Night Pro">Men Complex Night</span></span>
                                             <span class="mega-product__desc">Recovery, prostate &amp; sleep</span>
                                         </a>
                                         <a href="./" class="mega-product mega-product--fury">
-                                            <div class="mega-product__media"><img src="https://nutrimind-chi.vercel.app/images/fury-forest-fruit-box.webp?v=4f3826fd60" alt="Men Complex Day Fury drink powder box" loading="lazy"></div>
+                                            <div class="mega-product__media"><img src="https://nutrimind-chi.vercel.app/images/fury-forest-fruit-box.webp?v=4f3826fd60" alt="Fury drink powder box" loading="lazy"></div>
                                             <span class="mega-product__tag"><i class="ph-fill ph-lightning"></i>On demand</span>
-                                            <span class="mega-product__name">Men Complex Day Fury</span>
+                                            <span class="mega-product__name"><span class="nm-chg" data-nm="2" data-before="Men Complex Day Fury">Fury</span></span>
                                             <span class="mega-product__desc">Fast support for 4–6 hours</span>
                                         </a>
                                     </div>
@@ -90,7 +110,7 @@
                                             <img class="mega-promo__pack" src="https://nutrimind-chi.vercel.app/images/men-bundle-day-night-bottles.webp?v=0557ed3ac0" alt="Men Complex Day and Men Complex Night bottles" loading="lazy">
                                         </span>
                                         <span class="mega-promo__content">
-                                            <span class="mega-promo__title">Premium Vitality Bundle</span>
+                                            <span class="mega-promo__title"><span class="nm-chg" data-nm="2" data-before="Premium Vitality Bundle">Premium Male Vitality Pack</span></span>
                                             <span class="mega-promo__text">The complete 24-hour day &amp; night system</span>
                                             <span class="mega-promo__foot">
                                                 <span class="mega-promo__price">from HUF 15,990</span>
@@ -136,7 +156,7 @@
                                             <img class="mega-promo__pack" src="https://nutrimind-chi.vercel.app/images/women-complex-night-bottle.webp?v=ecba6c6473" alt="Women Complex Night bottle" loading="lazy"><img class="mega-promo__pack" src="https://nutrimind-chi.vercel.app/images/women-complex-day-blueberry-box.webp?v=1cf77c0277" alt="Women Complex Day box" loading="lazy">
                                         </span>
                                         <span class="mega-promo__content">
-                                            <span class="mega-promo__title">Day &amp; Night Bundle</span>
+                                            <span class="mega-promo__title"><span class="nm-chg" data-nm="2" data-before="Day &amp; Night Bundle">Women Complex Day &amp; Night Pack</span></span>
                                             <span class="mega-promo__text">Balanced energy by day, calm recovery by night</span>
                                             <span class="mega-promo__foot">
                                                 <span class="mega-promo__price">from HUF 17,990</span>
@@ -204,8 +224,8 @@
                     <button class="drawer__link" type="button" data-drawer-acc>Men's range <i class="ph ph-plus"></i></button>
                     <ul class="drawer__sub">
                         <li><a href="./">Men Complex Day</a></li>
-                        <li><a href="https://nutrimind-chi.vercel.app/product.html">Men Complex Night Pro</a></li>
-                        <li><a href="./">Men Complex Day Fury</a></li>
+                        <li><a href="https://nutrimind-chi.vercel.app/product.html"><span class="nm-chg" data-nm="2" data-before="Men Complex Night Pro">Men Complex Night</span></a></li>
+                        <li><a href="./"><span class="nm-chg" data-nm="2" data-before="Men Complex Day Fury">Fury</span></a></li>
                         <li><a href="./?filter=bundle" data-filter-link="bundle">Men's bundles</a></li>
                     </ul>
                 </li>
@@ -214,7 +234,7 @@
                     <ul class="drawer__sub">
                         <li><a href="./">Women Complex Day</a></li>
                         <li><a href="./">Women Complex Night</a></li>
-                        <li><a href="./?filter=bundle" data-filter-link="bundle">Day &amp; Night Bundle</a></li>
+                        <li><a href="./?filter=bundle" data-filter-link="bundle"><span class="nm-chg" data-nm="2" data-before="Day &amp; Night Bundle">Women Complex Day &amp; Night Pack</span></a></li>
                     </ul>
                 </li>
                 <li class="drawer__item"><a class="drawer__link" href="./?filter=drop">Electrolytes</a></li>
@@ -353,57 +373,57 @@
                     <article class="product-card product-card--men-bundle" data-category="men bundle">
                         <a href="#" class="product-card__media">
                             <span class="product-card__badges"><span class="badge badge--accent">Save up to 25%</span></span><img class="guarantee-seal" src="https://nutrimind-chi.vercel.app/images/seal-60-day-guarantee.svg?v=a8683e2728" alt="Results or money back after 60 days of use" width="80" height="80">
-                            <img src="https://nutrimind-chi.vercel.app/images/men-bundle-day-night-bottles.webp?v=0557ed3ac0" alt="Men Complex Day and Night Pro bottles" loading="lazy" width="604" height="600">
+                            <img src="https://nutrimind-chi.vercel.app/images/men-bundle-day-night-bottles.webp?v=0557ed3ac0" alt="Men Complex Day and Night bottles" loading="lazy" width="604" height="600">
                         </a>
                         <div class="product-card__body">
                             <div class="product-card__meta">
                                 <span class="tag tag--system"><i class="ph-fill ph-clock"></i>24-hour system</span>
                                 <span class="product-card__rating"><i class="ph-fill ph-star"></i>4.7 <span>(220)</span></span>
                             </div>
-                            <h4 class="product-card__title"><a href="#">Premium Male Power Package</a></h4>
-                            <p class="product-card__benefit">Day in the morning, Night Pro at bedtime</p>
+                            <h4 class="product-card__title"><a href="#"><span class="nm-chg" data-nm="2" data-before="Premium Male Power Package">Premium Male Vitality Pack</span></a></h4>
+                            <p class="product-card__benefit"><span class="nm-chg" data-nm="3" data-before="Day in the morning, Night Pro at bedtime">Day in the morning, Night at bedtime</span></p>
                             <p class="product-card__info">1-month supply · 2 products</p>
                             <div class="product-card__foot">
                                 <span class="price">15,990 Ft <s>18,980 Ft</s></span>
-                                <button class="add-btn" type="button" data-add-to-cart aria-label="Add Premium Male Power Package to cart"><i class="ph-bold ph-plus"></i><span>Add</span></button>
+                                <button class="add-btn" type="button" data-add-to-cart aria-label="Add Premium Male Vitality Pack to cart"><i class="ph-bold ph-plus"></i><span>Add</span></button>
                             </div>
                         </div>
                     </article>
                     <article class="product-card product-card--fury" data-category="men">
                         <a href="#" class="product-card__media">
                             
-                            <img src="https://nutrimind-chi.vercel.app/images/fury-forest-fruit-box.webp?v=4f3826fd60" alt="Men Complex Day Fury box" loading="lazy" width="539" height="900">
+                            <img src="https://nutrimind-chi.vercel.app/images/fury-forest-fruit-box.webp?v=4f3826fd60" alt="Fury box" loading="lazy" width="539" height="900">
                         </a>
                         <div class="product-card__body">
                             <div class="product-card__meta">
                                 <span class="tag tag--boost"><i class="ph-fill ph-lightning"></i>Strongest</span>
                                 <span class="product-card__rating"><i class="ph-fill ph-star"></i>4.7 <span>(220)</span></span>
                             </div>
-                            <h4 class="product-card__title"><a href="#">Men Complex Day Fury</a></h4>
+                            <h4 class="product-card__title"><a href="#"><span class="nm-chg" data-nm="2" data-before="Men Complex Day Fury">Fury</span></a></h4>
                             <p class="product-card__benefit">Our strongest daytime formula</p>
                             <div class="swatches" aria-label="Flavours"><span class="swatch swatch--forest is-active" title="Forest fruit"></span><span class="swatch swatch--kiwi" title="Strawberry-kiwi"></span><span class="swatches__label">2 flavours</span></div>
                             <div class="product-card__foot">
                                 <span class="price">12,990 Ft</span>
-                                <button class="add-btn" type="button" data-add-to-cart aria-label="Add Men Complex Day Fury to cart"><i class="ph-bold ph-plus"></i><span>Add</span></button>
+                                <button class="add-btn" type="button" data-add-to-cart aria-label="Add Fury to cart"><i class="ph-bold ph-plus"></i><span>Add</span></button>
                             </div>
                         </div>
                     </article>
                     <article class="product-card product-card--men-night" data-category="men">
                         <a href="https://nutrimind-chi.vercel.app/product.html" class="product-card__media">
                             
-                            <img src="https://nutrimind-chi.vercel.app/images/men-complex-night-bottle.webp?v=6e7ed0e654" alt="Men Complex Night Pro bottle" loading="lazy" width="390" height="706">
+                            <img src="https://nutrimind-chi.vercel.app/images/men-complex-night-bottle.webp?v=6e7ed0e654" alt="Men Complex Night bottle" loading="lazy" width="390" height="706">
                         </a>
                         <div class="product-card__body">
                             <div class="product-card__meta">
                                 <span class="tag tag--night"><i class="ph-fill ph-moon"></i>Night</span>
                                 <span class="product-card__rating"><i class="ph-fill ph-star"></i>4.7 <span>(220)</span></span>
                             </div>
-                            <h4 class="product-card__title"><a href="https://nutrimind-chi.vercel.app/product.html">Men Complex Night Pro</a></h4>
+                            <h4 class="product-card__title"><a href="https://nutrimind-chi.vercel.app/product.html"><span class="nm-chg" data-nm="2" data-before="Men Complex Night Pro">Men Complex Night</span></a></h4>
                             <p class="product-card__benefit">Night-time recovery &amp; sleep</p>
                             <p class="product-card__info">60 capsules · 2 daily</p>
                             <div class="product-card__foot">
                                 <span class="price">7,990 Ft</span>
-                                <button class="add-btn" type="button" data-add-to-cart aria-label="Add Men Complex Night Pro to cart"><i class="ph-bold ph-plus"></i><span>Add</span></button>
+                                <button class="add-btn" type="button" data-add-to-cart aria-label="Add Men Complex Night to cart"><i class="ph-bold ph-plus"></i><span>Add</span></button>
                             </div>
                         </div>
                     </article>
@@ -412,7 +432,7 @@
                     <aside class="plp-promo" data-category="men women bundle">
                         <div class="plp-promo__media" data-for="men">
                             <figure class="plp-promo__half plp-promo__half--men-day"><img src="https://nutrimind-chi.vercel.app/images/men-hero-day-sunrise.webp?v=0020687f71" alt="Men Complex Day at sunrise" loading="lazy" width="1120" height="1400"><figcaption><span class="plp-promo__when"><i class="ph-fill ph-sun"></i>Day</span><strong>Men Complex Day</strong></figcaption></figure>
-                            <figure class="plp-promo__half plp-promo__half--men-night"><img src="https://nutrimind-chi.vercel.app/images/men-hero-night-moonlight.webp?v=44fedbfddf" alt="Men Complex Night Pro under a moonlit sky" loading="lazy" width="1120" height="1400"><figcaption><span class="plp-promo__when"><i class="ph-fill ph-moon"></i>Night</span><strong>Men Complex Night Pro</strong></figcaption></figure>
+                            <figure class="plp-promo__half plp-promo__half--men-night"><img src="https://nutrimind-chi.vercel.app/images/men-hero-night-moonlight.webp?v=44fedbfddf" alt="Men Complex Night under a moonlit sky" loading="lazy" width="1120" height="1400"><figcaption><span class="plp-promo__when"><i class="ph-fill ph-moon"></i>Night</span><strong><span class="nm-chg" data-nm="2" data-before="Men Complex Night Pro">Men Complex Night</span></strong></figcaption></figure>
                             <span class="plp-promo__clock" aria-hidden="true">24h</span>
                         </div>
                         <div class="plp-promo__media" data-for="women">
@@ -430,20 +450,20 @@
                     <article class="product-card product-card--extreme" data-category="men bundle">
                         <a href="#" class="product-card__media product-card__media--pair">
                             <span class="product-card__badges"><span class="badge badge--accent">Save up to 26%</span></span><img class="guarantee-seal" src="https://nutrimind-chi.vercel.app/images/seal-60-day-guarantee.svg?v=a8683e2728" alt="Results or money back after 60 days of use" width="80" height="80">
-                            <img src="https://nutrimind-chi.vercel.app/images/men-complex-night-bottle.webp?v=6e7ed0e654" alt="Men Complex Night Pro bottle" loading="lazy" width="390" height="706">
-                            <img src="https://nutrimind-chi.vercel.app/images/fury-forest-fruit-box.webp?v=4f3826fd60" alt="Men Complex Day Fury box" loading="lazy" width="539" height="900">
+                            <img src="https://nutrimind-chi.vercel.app/images/men-complex-night-bottle.webp?v=6e7ed0e654" alt="Men Complex Night bottle" loading="lazy" width="390" height="706">
+                            <img src="https://nutrimind-chi.vercel.app/images/fury-forest-fruit-box.webp?v=4f3826fd60" alt="Fury box" loading="lazy" width="539" height="900">
                         </a>
                         <div class="product-card__body">
                             <div class="product-card__meta">
                                 <span class="tag tag--boost"><i class="ph-fill ph-lightning"></i>Max strength</span>
                                 <span class="product-card__rating"><i class="ph-fill ph-star"></i>4.7 <span>(220)</span></span>
                             </div>
-                            <h4 class="product-card__title"><a href="#">Extreme Male Power Package</a></h4>
-                            <p class="product-card__benefit">Day Fury by day, Night Pro by night</p>
+                            <h4 class="product-card__title"><a href="#"><span class="nm-chg" data-nm="2" data-before="Extreme Male Power Package">Extreme Male Vitality Pack</span></a></h4>
+                            <p class="product-card__benefit"><span class="nm-chg" data-nm="3" data-before="Day Fury by day, Night Pro by night">Fury by day, Night by night</span></p>
                             <div class="swatches" aria-label="Flavours"><span class="swatch swatch--forest is-active" title="Forest fruit"></span><span class="swatch swatch--kiwi" title="Strawberry-kiwi"></span><span class="swatches__label">2 flavours</span></div>
                             <div class="product-card__foot">
                                 <span class="price">16,990 Ft</span>
-                                <button class="add-btn" type="button" data-add-to-cart aria-label="Add Extreme Male Power Package to cart"><i class="ph-bold ph-plus"></i><span>Add</span></button>
+                                <button class="add-btn" type="button" data-add-to-cart aria-label="Add Extreme Male Vitality Pack to cart"><i class="ph-bold ph-plus"></i><span>Add</span></button>
                             </div>
                         </div>
                     </article>
@@ -514,12 +534,12 @@
                                 <span class="tag tag--system"><i class="ph-fill ph-clock"></i>24-hour system</span>
                                 <span class="product-card__rating"><i class="ph-fill ph-star"></i>4.9 <span>(21)</span></span>
                             </div>
-                            <h4 class="product-card__title"><a href="#">Women Complex Day &amp; Night</a></h4>
+                            <h4 class="product-card__title"><a href="#"><span class="nm-chg" data-nm="2" data-before="Women Complex Day &amp; Night">Women Complex Day &amp; Night Pack</span></a></h4>
                             <p class="product-card__benefit">Keep up by day, wind down at night</p>
                             <p class="product-card__info">1-month supply · 2 products</p>
                             <div class="product-card__foot">
                                 <span class="price">17,990 Ft</span>
-                                <button class="add-btn" type="button" data-add-to-cart aria-label="Add Women Complex Day and Night to cart"><i class="ph-bold ph-plus"></i><span>Add</span></button>
+                                <button class="add-btn" type="button" data-add-to-cart aria-label="Add Women Complex Day &amp; Night Pack to cart"><i class="ph-bold ph-plus"></i><span>Add</span></button>
                             </div>
                         </div>
                     </article>
@@ -759,6 +779,101 @@
             if (label === 'English · HUF') navigate('EN', event);
         }
     }, true);
+})();
+</script>
+<script id="nm-copy-script">
+(() => {
+    const changes = [[1, "Announcement bar", "Take it for 60 days. Not satisfied? Get your money back", "Take any bundle for 60 days. Not satisfied? Get your money back"], [2, "Product names", "Men Complex Night Pro", "Men Complex Night"], [2, "Product names", "Men Complex Day Fury", "Fury"], [2, "Product names", "Premium Male Power Package", "Premium Male Vitality Pack"], [2, "Product names", "Extreme Male Power Package", "Extreme Male Vitality Pack"], [2, "Product names", "Women Complex Day & Night", "Women Complex Day & Night Pack"], [2, "Product names", "Premium Vitality Bundle", "Premium Male Vitality Pack"], [2, "Product names", "Day & Night Bundle", "Women Complex Day & Night Pack"], [3, "Card subtitles", "Day in the morning, Night Pro at bedtime", "Day in the morning, Night at bedtime"], [3, "Card subtitles", "Day Fury by day, Night Pro by night", "Fury by day, Night by night"]], attributes = {"Men Complex Night Pro bottle": "Men Complex Night bottle", "Men Complex Day Fury drink powder box": "Fury drink powder box", "Men Complex Day Fury box": "Fury box", "Men Complex Day and Night Pro bottles": "Men Complex Day and Night bottles", "Men Complex Night Pro under a moonlit sky": "Men Complex Night under a moonlit sky", "Add Premium Male Power Package to cart": "Add Premium Male Vitality Pack to cart", "Add Men Complex Day Fury to cart": "Add Fury to cart", "Add Men Complex Night Pro to cart": "Add Men Complex Night to cart", "Add Extreme Male Power Package to cart": "Add Extreme Male Vitality Pack to cart", "Add Women Complex Day and Night to cart": "Add Women Complex Day & Night Pack to cart"};
+    const norm = text => text.replace(/\s+/g, ' ').trim();
+    const byBefore = new Map(changes.map(c => [norm(c[2]), c]));
+    let mode = 'changes', queued = false;
+    document.documentElement.dataset.nmMode = mode;
+    const panel = document.createElement('aside');
+    panel.id = 'nm-panel'; panel.setAttribute('aria-label', 'Copy preview controls');
+    panel.innerHTML = '<section id="nm-list" aria-labelledby="nm-title" hidden><h2 id="nm-title">Nutrimind collection page - copy update v1.1 (2 Nov 2026)</h2><p>Green outline = changed copy. Hover a change to see the original.</p><ol></ol></section><div id="nm-bar"><select id="nm-mode" aria-label="Preview mode"><option value="changes">Show changes</option><option value="clean">New copy</option><option value="original">Original</option></select><button type="button" id="nm-toggle" aria-controls="nm-list" aria-expanded="false"></button></div>';
+    const groups = [...new Set(changes.map(c => c[0]))];
+    const drawer = panel.querySelector('#nm-list'), toggle = panel.querySelector('#nm-toggle');
+    function setOpen(open) {
+        drawer.hidden = !open; toggle.setAttribute('aria-expanded', String(open));
+        toggle.textContent = `Changes (${groups.length}) ${open ? '▾' : '▴'}`;
+    }
+    setOpen(false);
+    toggle.addEventListener('click', () => setOpen(drawer.hidden));
+    for (const number of groups) {
+        const rows = changes.filter(c => c[0] === number);
+        const li = document.createElement('li'), button = document.createElement('button');
+        button.type = 'button';
+        button.textContent = `#${number} · ${rows[0][1]} — ${rows.map(c => c[2] + ' → ' + c[3]).join('; ')}`;
+        button.addEventListener('click', () => {
+            const elements = [...document.querySelectorAll(`[data-nm="${number}"]`)];
+            const element = elements.find(e => e.getClientRects().length && !e.closest('[inert]'));
+            if (!element) return;
+            element.scrollIntoView({behavior: 'smooth', block: 'center'});
+            element.classList.remove('nm-flash'); void element.offsetWidth; element.classList.add('nm-flash');
+            setTimeout(() => element.classList.remove('nm-flash'), 3200);
+        });
+        li.append(button); panel.querySelector('ol').append(li);
+    }
+    document.body.append(panel);
+    const tip = document.createElement('div'); tip.id = 'nm-tooltip'; tip.hidden = true;
+    tip.setAttribute('role', 'tooltip'); document.body.append(tip);
+    function tooltip(element) {
+        if (!element || mode !== 'changes') {tip.hidden = true; return;}
+        tip.textContent = 'BEFORE: ' + element.dataset.before; tip.hidden = false;
+        const box = element.getBoundingClientRect();
+        tip.style.left = Math.max(12, Math.min(box.left, innerWidth - tip.offsetWidth - 12)) + 'px';
+        tip.style.top = Math.max(12, Math.min(box.bottom + 12, innerHeight - tip.offsetHeight - 12)) + 'px';
+    }
+    document.addEventListener('pointerover', event => tooltip(event.target.closest?.('.nm-chg')));
+    document.addEventListener('pointerout', event => {
+        if (event.target.closest?.('.nm-chg') !== event.relatedTarget?.closest?.('.nm-chg')) tip.hidden = true;
+    });
+    document.addEventListener('scroll', () => {tip.hidden = true;}, true);
+    function apply() {
+        observer.disconnect();
+        try {
+            const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+                acceptNode(node) {
+                    return node.parentElement?.closest('script,style,noscript,template,svg,#nm-panel,#nm-tooltip,.nm-chg')
+                        ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT;
+                }
+            });
+            const nodes = []; let node;
+            while ((node = walker.nextNode())) nodes.push(node);
+            for (const node of nodes) {
+                const change = byBefore.get(norm(node.nodeValue));
+                if (!change) continue;
+                const span = document.createElement('span'); span.className = 'nm-chg';
+                span.dataset.nm = change[0]; span.dataset.before = change[2];
+                node.replaceWith(document.createTextNode(node.nodeValue.match(/^\s*/)[0]), span,
+                                 document.createTextNode(node.nodeValue.match(/\s*$/)[0]));
+            }
+            // Serialized metadata also restores theme-created clones in every mode.
+            for (const element of document.querySelectorAll('.nm-chg[data-before]')) {
+                const change = byBefore.get(norm(element.dataset.before));
+                if (!change) continue;
+                const wanted = mode === 'original' ? change[2] : change[3];
+                if (element.textContent !== wanted) element.textContent = wanted;
+            }
+            for (const element of document.querySelectorAll('[alt],[aria-label]')) {
+                for (const name of ['alt', 'aria-label']) {
+                    const before = element.getAttribute(name);
+                    if (before !== null && Object.hasOwn(attributes, norm(before)))
+                        element.setAttribute(name, attributes[norm(before)]);
+                }
+            }
+        } finally {
+            observer.observe(document.body, {subtree:true, childList:true, characterData:true,
+                                            attributes:true, attributeFilter:['alt','aria-label']});
+        }
+    }
+    const observer = new MutationObserver(() => {
+        if (!queued) {queued = true; requestAnimationFrame(() => {queued = false; apply();});}
+    });
+    panel.querySelector('select').addEventListener('change', event => {
+        mode = event.target.value; document.documentElement.dataset.nmMode = mode; tip.hidden = true; apply();
+    });
+    apply();
 })();
 </script>
 </body>
