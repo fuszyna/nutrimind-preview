@@ -237,7 +237,7 @@
                         <a href="https://nutrimind-chi.vercel.app/index-v2.html">Home</a><i class="ph ph-caret-right" aria-hidden="true"></i><span aria-current="page">Shop all</span>
                     </nav>
                     <span class="plp-hero__eyebrow">The Nutrimind Collection</span>
-                    <h1 class="plp-hero__title">Shop all <em>formulas</em></h1>
+                    <h1 class="plp-hero__title">Find your <em>formula</em></h1>
                     <p class="plp-hero__lead">Plant-based supplements for men and women, developed and made in Hungary. One formula for the day, another for the night.</p>
                     <ul class="plp-hero__chips">
                         <li><i class="ph ph-leaf"></i>100% vegan</li>
@@ -822,7 +822,7 @@
         observer.disconnect();
         try {
             const heading = document.querySelector('h1.plp-hero__title');
-            const headingHTML = 'Az összes <em>formulánk</em>';
+            const headingHTML = 'Találd meg a <em>formulád</em>';
             if (heading && heading.innerHTML !== headingHTML) heading.innerHTML = headingHTML;
             const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
                 acceptNode(node) {

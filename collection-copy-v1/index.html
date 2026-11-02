@@ -257,7 +257,7 @@ html[data-nm-mode="changes"] .nm-chg::before {content:attr(data-nm);position:abs
                         <a href="https://nutrimind-chi.vercel.app/index-v2.html">Home</a><i class="ph ph-caret-right" aria-hidden="true"></i><span aria-current="page">Shop all</span>
                     </nav>
                     <span class="plp-hero__eyebrow">The Nutrimind Collection</span>
-                    <h1 class="plp-hero__title">Shop all <em>formulas</em></h1>
+                    <h1 class="plp-hero__title">Find your <em>formula</em></h1>
                     <p class="plp-hero__lead">Plant-based supplements for men and women, developed and made in Hungary. One formula for the day, another for the night.</p>
                     <ul class="plp-hero__chips">
                         <li><i class="ph ph-leaf"></i>100% vegan</li>
@@ -831,7 +831,7 @@ html[data-nm-mode="changes"] .nm-chg::before {content:attr(data-nm);position:abs
     document.documentElement.dataset.nmMode = mode;
     const panel = document.createElement('aside');
     panel.id = 'nm-panel'; panel.setAttribute('aria-label', 'Copy preview controls');
-    panel.innerHTML = '<section id="nm-list" aria-labelledby="nm-title" hidden><h2 id="nm-title">Nutrimind collection page - copy update v1.3 (2 Nov 2026)</h2><p>Green outline = changed copy. Hover a change to see the original.</p><p>Removed: the &quot;Save up to 26%&quot; badges (Extreme Pack, Women Pack, women mega menu) - the live site shows no discount there. Premium Pack: 20,980 Ft separately vs 16,990 Ft = 19%.</p><p>How to choose: the Day formula text follows the filter (women = drink powder only); the section is hidden on Electrolytes.</p><ol></ol></section><div id="nm-bar"><select id="nm-mode" aria-label="Preview mode"><option value="changes">Show changes</option><option value="clean">New copy</option><option value="original">Original</option></select><button type="button" id="nm-toggle" aria-controls="nm-list" aria-expanded="false"></button></div>';
+    panel.innerHTML = '<section id="nm-list" aria-labelledby="nm-title" hidden><h2 id="nm-title">Nutrimind collection page - copy update v1.5 (2 Nov 2026)</h2><p>Green outline = changed copy. Hover a change to see the original.</p><p>Heading: &quot;Shop all formulas&quot; &rarr; &quot;Find your formula&quot;.</p><p>Removed: the &quot;Save up to 26%&quot; badges (Extreme Pack, Women Pack, women mega menu) - the live site shows no discount there. Premium Pack: 20,980 Ft separately vs 16,990 Ft = 19%.</p><p>How to choose: the Day formula text follows the filter (women = drink powder only); the section is hidden on Electrolytes.</p><ol></ol></section><div id="nm-bar"><select id="nm-mode" aria-label="Preview mode"><option value="changes">Show changes</option><option value="clean">New copy</option><option value="original">Original</option></select><button type="button" id="nm-toggle" aria-controls="nm-list" aria-expanded="false"></button></div>';
     const groups = [...new Set(changes.map(c => c[0]))];
     const drawer = panel.querySelector('#nm-list'), toggle = panel.querySelector('#nm-toggle');
     function setOpen(open) {
