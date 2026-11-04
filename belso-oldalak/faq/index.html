@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html data-nm-mode="changes" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYIK — EN preview</title>
+    <meta name="description" content="Answers about ordering, delivery, payment, the 60-day guarantee and Nutrimind® products.">
+    <link rel="icon" type="image/png" href="https://nutrimind-chi.vercel.app/images/favicon.png?v=c9e994e33e">
+    <link rel="apple-touch-icon" href="https://nutrimind-chi.vercel.app/images/favicon.png?v=c9e994e33e">
+    <link rel="preload" href="https://nutrimind-chi.vercel.app/fonts/HouschkaPro-Medium.woff2?v=3a2ebcabce" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/light/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+    <link rel="stylesheet" href="https://nutrimind-chi.vercel.app/css/style.css?v=02dbe5901d">
+    <link rel="stylesheet" href="https://nutrimind-chi.vercel.app/css/responsive.css?v=8a86c5f655">
+    <meta name="robots" content="noindex,nofollow">
+<style id="nm-copy-style">
+.nm-chg {position:relative;}
+html[data-nm-mode="changes"] .nm-chg {outline:3px solid #16a34a!important;outline-offset:3px!important;background-color:rgba(22,163,74,.10)!important;}
+html[data-nm-mode="changes"] .nm-chg::before {content:attr(data-nm);position:absolute;top:-14px;left:-12px;min-width:24px;height:24px;padding:0 4px;border-radius:999px;background:#16a34a;color:white;font:bold 13px/24px system-ui;text-align:center;z-index:20;pointer-events:none;}
+#nm-panel {position:fixed;inset:auto auto 16px 16px;width:max-content;max-width:calc(100vw - 32px);background:#fff;color:#17251b;border:1px solid #d4ded7;border-radius:16px;box-shadow:0 8px 36px #0004;z-index:2147483646;font:14px/1.45 system-ui;box-sizing:border-box;}
+#nm-panel * {box-sizing:border-box;}
+#nm-panel [hidden],#nm-tooltip[hidden] {display:none!important;}
+#nm-bar {display:flex;align-items:center;gap:8px;padding:8px;}
+#nm-panel #nm-toggle {white-space:nowrap;background:#f1f8f3;border:1px solid #779781;border-radius:8px;padding:7px 9px;cursor:pointer;}
+#nm-list {position:absolute;bottom:calc(100% + 8px);left:0;width:440px;max-width:calc(100vw - 32px);max-height:60vh;overflow:auto;overscroll-behavior:contain;padding:16px;background:white;border:1px solid #d4ded7;border-radius:16px;box-shadow:0 8px 36px #0004;}
+#nm-list h2 {font:700 14px/1.45 system-ui;margin:0;}
+#nm-panel button:focus-visible,#nm-panel select:focus-visible {outline:2px solid #173f28;outline-offset:2px;}
+#nm-panel button,#nm-panel select {font:inherit;color:inherit;}
+#nm-panel select {width:auto;max-width:100%;padding:7px;background:white;border:1px solid #779781;border-radius:8px;margin:0;}
+#nm-panel ol {padding:0;list-style:none;} #nm-panel li {margin:8px 0;}
+#nm-panel li button {text-align:left;border:0;border-radius:6px;background:#f1f8f3;cursor:pointer;width:100%;padding:8px;}
+@media (max-width:767px) {#nm-panel {left:16px;right:16px;bottom:64px;width:auto;max-width:none;} #nm-bar {flex-wrap:wrap;} #nm-list {width:100%;}}
+#nm-tooltip {position:fixed;z-index:2147483647;max-width:min(440px,calc(100vw - 24px));padding:10px 14px;border-radius:8px;background:#12351f;color:#fff;font:13px/1.45 system-ui;box-shadow:0 4px 20px #0004;pointer-events:none;}
+.nm-flash {animation:nm-flash 1s ease-in-out 3;} @keyframes nm-flash {50% {box-shadow:0 0 0 10px #16a34a77;}}
+
+html[data-nm-mode="changes"] .nm-new {outline:3px solid #16a34a!important;outline-offset:3px!important;background-color:rgba(22,163,74,.10)!important;}
+</style>
+</head>
+<!-- INFO PAGE (Shopify page template mockup): Frequently asked questions. Live URL: nutrimind.hu/pages/faq.
+     Header, drawer and footer are copied from product.html; content translated from the live page. -->
+<body class="shop-page page-info page-faq">
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- ===================== ANNOUNCEMENT BAR ===================== -->
+    <div class="announcement">
+        <div class="container announcement__container">
+            <div class="announcement__track" data-rotator>
+                <p class="announcement__item is-active"><i class="ph ph-truck"></i>Free next-day GLS delivery on orders over HUF 19,000</p>
+                <p class="announcement__item"><i class="ph ph-shield-check"></i><span class="nm-chg" data-nm="1" data-before="Take it for 60 days. Not satisfied? Get your money back">Take any bundle for 60 days. Not satisfied? Get your money back</span></p>
+                <p class="announcement__item"><i class="ph ph-flask"></i>Every formula tested by Eurofins, an accredited laboratory</p>
+            </div>
+            <div class="announcement__lang">
+                <button class="announcement__lang-btn is-active" type="button">EN</button>
+                <span class="announcement__divider"></span>
+                <button class="announcement__lang-btn" type="button">HU</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================== HEADER (docked; same nav as homepage v2) ===================== -->
+    <header class="site-header shop-header" data-header>
+        <div class="container site-header__container">
+            <div class="site-header__bar">
+                <button class="site-header__toggle" type="button" aria-label="Open menu" data-menu-open>
+                    <i class="ph ph-list"></i>
+                </button>
+
+                <nav class="main-nav" aria-label="Main navigation">
+                        <ul class="main-nav__list">
+                        <li class="main-nav__item has-mega">
+                            <button class="main-nav__link" type="button">For men <i class="ph ph-caret-down"></i></button>
+                            <div class="mega">
+                                <div class="container mega__container">
+                                    <div class="mega__col mega__col--links">
+                                        <span class="mega__label">Shop by need</span>
+                                        <ul class="mega__links">
+                                            <li><a href="https://nutrimind-chi.vercel.app/collection.html">Energy &amp; performance</a></li>
+                                            <li><a href="https://nutrimind-chi.vercel.app/collection.html">Testosterone support</a></li>
+                                            <li><a href="https://nutrimind-chi.vercel.app/collection.html">Libido &amp; vitality</a></li>
+                                            <li><a href="https://nutrimind-chi.vercel.app/collection.html">Stress &amp; relaxation</a></li>
+                                            <li><a href="https://nutrimind-chi.vercel.app/collection.html">Sleep &amp; recovery</a></li>
+                                            <li><a href="https://nutrimind-chi.vercel.app/collection.html">Prostate health</a></li>
+                                        </ul>
+                                        <a href="https://nutrimind-chi.vercel.app/collection.html?filter=men" class="link-arrow">Shop all for men <i class="ph-bold ph-arrow-right"></i></a>
+                                    </div>
+                                    <div class="mega__col mega__col--products">
+                                        <a href="https://nutrimind-chi.vercel.app/collection.html" class="mega-product mega-product--men-day">
+                                            <div class="mega-product__media"><img src="https://nutrimind-chi.vercel.app/images/men-complex-day-bottle.webp?v=51f6768a63" alt="Men Complex Day bottle" loading="lazy"></div>
+                                            <span class="mega-product__tag"><i class="ph-fill ph-sun"></i>Day</span>
+                                            <span class="mega-product__name">Men Complex Day</span>
+                                            <span class="mega-product__desc">Energy, drive &amp; libido</span>
+                                        </a>
+                                        <a href="https://nutrimind-chi.vercel.app/product.html" class="mega-product mega-product--men-night">
+                                            <div class="mega-product__media"><img src="https://nutrimind-chi.vercel.app/images/men-complex-night-bottle.webp?v=6e7ed0e654" alt="Men Complex Night bottle" loading="lazy"></div>
+                                            <span class="mega-product__tag"><i class="ph-fill ph-moon"></i>Night</span>
+                                            <span class="mega-product__name"><span class="nm-chg" data-nm="2" data-before="Men Complex Night Pro">Men Complex Night</span></span>
+                                            <span class="mega-product__desc">Recovery, prostate &amp; sleep</span>
+                                        </a>
+                                        <a href="https://nutrimind-chi.vercel.app/collection.html" class="mega-product mega-product--fury">
+                                            <div class="mega-product__media"><img src="https://nutrimind-chi.vercel.app/images/fury-forest-fruit-box.webp?v=4f3826fd60" alt="Fury drink powder box" loading="lazy"></div>
+                                            <span class="mega-product__tag"><i class="ph-fill ph-lightning"></i>On demand</span>
+                                            <span class="mega-product__name"><span class="nm-chg" data-nm="2" data-before="Men Complex Day Fury">Fury</span></span>
+                                            <span class="mega-product__desc">Fast support for 4–6 hours</span>
+                                        </a>
+                                    </div>
+                                    <a href="https://nutrimind-chi.vercel.app/collection.html?filter=bundle" class="mega-promo mega-promo--men" data-filter-link="bundle">
+                                        <span class="mega-promo__media">
+                                            <span class="mega-promo__badge"><span class="nm-chg" data-nm="4" data-before="Save up to 25%">Save 19%</span></span>
+                                            <img class="mega-promo__pack" src="https://nutrimind-chi.vercel.app/images/men-bundle-day-night-bottles.webp?v=0557ed3ac0" alt="Men Complex Day and Men Complex Night bottles" loading="lazy">
+                                        </span>
+                                        <span class="mega-promo__content">
+                                            <span class="mega-promo__title"><span class="nm-chg" data-nm="2" data-before="Premium Vitality Bundle">Premium Male Vitality Pack</span></span>
+                                            <span class="mega-promo__text">The complete 24-hour day &amp; night system</span>
+                                            <span class="mega-promo__foot">
+                                                <span class="mega-promo__price"><span class="nm-chg" data-nm="4" data-before="from HUF 15,990">from HUF 16,990</span></span>
+                                                <span class="mega-promo__cta">Shop bundle <i class="ph-bold ph-arrow-right"></i></span>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="main-nav__item has-mega">
+                            <button class="main-nav__link" type="button">For women <i class="ph ph-caret-down"></i></button>
+                            <div class="mega">
+                                <div class="container mega__container">
+                                    <div class="mega__col mega__col--links">
+                                        <span class="mega__label">Shop by need</span>
+                                        <ul class="mega__links">
+                                            <li><a href="https://nutrimind-chi.vercel.app/collection.html">Daytime energy</a></li>
+                                            <li><a href="https://nutrimind-chi.vercel.app/collection.html">Focus &amp; performance</a></li>
+                                            <li><a href="https://nutrimind-chi.vercel.app/collection.html">PMS &amp; stress</a></li>
+                                            <li><a href="https://nutrimind-chi.vercel.app/collection.html">Hormonal balance</a></li>
+                                            <li><a href="https://nutrimind-chi.vercel.app/collection.html">Sleep &amp; recovery</a></li>
+                                        </ul>
+                                        <a href="https://nutrimind-chi.vercel.app/collection.html?filter=women" class="link-arrow">Shop all for women <i class="ph-bold ph-arrow-right"></i></a>
+                                    </div>
+                                    <div class="mega__col mega__col--products mega__col--two">
+                                        <a href="https://nutrimind-chi.vercel.app/collection.html" class="mega-product mega-product--women-day">
+                                            <div class="mega-product__media"><img src="https://nutrimind-chi.vercel.app/images/women-complex-day-blueberry-box.webp?v=1cf77c0277" alt="Women Complex Day box" loading="lazy"></div>
+                                            <span class="mega-product__tag"><i class="ph-fill ph-sun"></i>Day</span>
+                                            <span class="mega-product__name">Women Complex Day</span>
+                                            <span class="mega-product__desc"><span class="nm-chg" data-nm="6" data-before="Energy, focus, PMS &amp; stress">Energy, focus, weight control</span></span>
+                                        </a>
+                                        <a href="https://nutrimind-chi.vercel.app/collection.html" class="mega-product mega-product--women-night">
+                                            <div class="mega-product__media"><img src="https://nutrimind-chi.vercel.app/images/women-complex-night-bottle.webp?v=ecba6c6473" alt="Women Complex Night bottle" loading="lazy"></div>
+                                            <span class="mega-product__tag"><i class="ph-fill ph-moon"></i>Night</span>
+                                            <span class="mega-product__name">Women Complex Night</span>
+                                            <span class="mega-product__desc"><span class="nm-chg" data-nm="6" data-before="Hormonal balance &amp; sleep">Hormonal balance, deep sleep, recovery</span></span>
+                                        </a>
+                                    </div>
+                                    <a href="https://nutrimind-chi.vercel.app/collection.html?filter=bundle" class="mega-promo mega-promo--women" data-filter-link="bundle">
+                                        <span class="mega-promo__media">
+                                            
+                                            <img class="mega-promo__pack" src="https://nutrimind-chi.vercel.app/images/women-complex-night-bottle.webp?v=ecba6c6473" alt="Women Complex Night bottle" loading="lazy"><img class="mega-promo__pack" src="https://nutrimind-chi.vercel.app/images/women-complex-day-blueberry-box.webp?v=1cf77c0277" alt="Women Complex Day box" loading="lazy">
+                                        </span>
+                                        <span class="mega-promo__content">
+                                            <span class="mega-promo__title"><span class="nm-chg" data-nm="2" data-before="Day &amp; Night Bundle">Women Complex Day &amp; Night Pack</span></span>
+                                            <span class="mega-promo__text">Balanced energy by day, calm recovery by night</span>
+                                            <span class="mega-promo__foot">
+                                                <span class="mega-promo__price">from HUF 17,990</span>
+                                                <span class="mega-promo__cta">Shop bundle <i class="ph-bold ph-arrow-right"></i></span>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="https://nutrimind-chi.vercel.app/collection.html?filter=drop" class="main-nav__link">Electrolytes</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="https://nutrimind-chi.vercel.app/collection.html?filter=bundle" class="main-nav__link" data-filter-link="bundle">Bundles</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="https://nutrimind-chi.vercel.app/index-v2.html#science" class="main-nav__link">Our science</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <a href="https://nutrimind-chi.vercel.app/index-v2.html" class="site-header__logo" aria-label="Nutrimind home">
+                    <img src="https://nutrimind-chi.vercel.app/images/nutrimind-logo-blue.png?v=6620bfafad" alt="Nutrimind logo" width="150" height="23">
+                </a>
+
+                <div class="site-header__actions">
+                    <!-- Men / women switch: the choice is remembered and the page follows it -->
+                    <div class="audience-switch" data-audience-switch data-active="men" role="radiogroup" aria-label="Shop for">
+                        <span class="audience-switch__thumb" aria-hidden="true"></span>
+                        <button class="audience-switch__option is-active" type="button" role="radio" aria-checked="true" data-audience-set="men"><i class="ph-bold ph-gender-male"></i><span>Men</span></button>
+                        <button class="audience-switch__option" type="button" role="radio" aria-checked="false" data-audience-set="women"><i class="ph-bold ph-gender-female"></i><span>Women</span></button>
+                    </div>
+                    <button class="icon-btn icon-btn--light" type="button" aria-label="Search"><i class="ph ph-magnifying-glass"></i></button>
+                    <a href="#" class="icon-btn icon-btn--light site-header__account" aria-label="Account"><i class="ph ph-user"></i></a>
+                    <button class="icon-btn icon-btn--light icon-btn--cart" type="button" aria-label="Cart">
+                        <i class="ph ph-shopping-cart-simple"></i>
+                        <span class="icon-btn__count" data-cart-count>0</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===================== MOBILE DRAWER ===================== -->
+    <div class="drawer" data-drawer aria-hidden="true">
+        <div class="drawer__overlay" data-menu-close></div>
+        <div class="drawer__panel">
+            <div class="drawer__head">
+                <img src="https://nutrimind-chi.vercel.app/images/nutrimind-logo-blue.png?v=6620bfafad" alt="Nutrimind logo" width="130" height="20">
+                <button class="icon-btn" type="button" aria-label="Close menu" data-menu-close><i class="ph ph-x"></i></button>
+            </div>
+            <div class="drawer__gateway">
+                <a href="https://nutrimind-chi.vercel.app/collection.html?filter=men" class="drawer__gate drawer__gate--men" data-filter-link="men">
+                    <img src="https://nutrimind-chi.vercel.app/images/men-complex-scene.webp?v=56f1b01357" alt="Men Complex bottles" loading="lazy">
+                    <span>For men</span>
+                </a>
+                <a href="https://nutrimind-chi.vercel.app/collection.html?filter=women" class="drawer__gate drawer__gate--women" data-filter-link="women">
+                    <img src="https://nutrimind-chi.vercel.app/images/women-complex-day-night-scene.webp?v=5bae194832" alt="Women Complex products" loading="lazy">
+                    <span>For women</span>
+                </a>
+            </div>
+            <ul class="drawer__list">
+                <li class="drawer__item">
+                    <button class="drawer__link" type="button" data-drawer-acc>Men's range <i class="ph ph-plus"></i></button>
+                    <ul class="drawer__sub">
+                        <li><a href="https://nutrimind-chi.vercel.app/collection.html">Men Complex Day</a></li>
+                        <li><a href="https://nutrimind-chi.vercel.app/product.html"><span class="nm-chg" data-nm="2" data-before="Men Complex Night Pro">Men Complex Night</span></a></li>
+                        <li><a href="https://nutrimind-chi.vercel.app/collection.html"><span class="nm-chg" data-nm="2" data-before="Men Complex Day Fury">Fury</span></a></li>
+                        <li><a href="https://nutrimind-chi.vercel.app/collection.html?filter=bundle" data-filter-link="bundle">Men's bundles</a></li>
+                    </ul>
+                </li>
+                <li class="drawer__item">
+                    <button class="drawer__link" type="button" data-drawer-acc>Women's range <i class="ph ph-plus"></i></button>
+                    <ul class="drawer__sub">
+                        <li><a href="https://nutrimind-chi.vercel.app/collection.html">Women Complex Day</a></li>
+                        <li><a href="https://nutrimind-chi.vercel.app/collection.html">Women Complex Night</a></li>
+                        <li><a href="https://nutrimind-chi.vercel.app/collection.html?filter=bundle" data-filter-link="bundle"><span class="nm-chg" data-nm="2" data-before="Day &amp; Night Bundle">Women Complex Day &amp; Night Pack</span></a></li>
+                    </ul>
+                </li>
+                <li class="drawer__item"><a class="drawer__link" href="https://nutrimind-chi.vercel.app/collection.html?filter=drop">Electrolytes</a></li>
+                <li class="drawer__item"><a class="drawer__link" href="https://nutrimind-chi.vercel.app/collection.html?filter=bundle" data-filter-link="bundle">Bundles</a></li>
+                <li class="drawer__item"><a class="drawer__link" href="https://nutrimind-chi.vercel.app/index-v2.html#science">Our science</a></li>
+                <li class="drawer__item"><a class="drawer__link" href="https://nutrimind-chi.vercel.app/index-v2.html#journal">Journal</a></li>
+                <li class="drawer__item"><a class="drawer__link" href="#">FAQ</a></li>
+                <li class="drawer__item"><a class="drawer__link" href="#">Contact</a></li>
+            </ul>
+            <a href="https://nutrimind-chi.vercel.app/collection.html" class="btn btn--primary btn--block" data-menu-close>Shop all products <i class="ph ph-handbag"></i></a>
+        </div>
+    </div>
+
+    <main id="main">
+
+        <section class="page-hero">
+            <div class="container page-hero__container">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="https://nutrimind-chi.vercel.app/index-v2.html">Home</a><i class="ph ph-caret-right" aria-hidden="true"></i><span aria-current="page">Frequently asked questions</span>
+                </nav>
+                <div class="page-hero__text">
+                    <span class="eyebrow">Help</span>
+                    <h1 class="page-hero__title">Frequently asked questions</h1>
+                </div>
+            </div>
+        </section>
+        <!-- FAQ: homepage FAQ design (intro + accordion), questions grouped as on the live page.
+             Delivery/payment figures follow the live FAQ (HUF 19,000 free-delivery threshold, matching the announcement bar). -->
+        <section class="section faq page-faq">
+            <div class="container faq__container">
+                <div class="faq__intro">
+                    <span class="eyebrow">Jump to</span>
+                    <nav class="page-faq__nav" aria-label="FAQ topics">
+                        <a href="#faq-orders">Ordering &amp; delivery</a>
+                        <a href="#faq-products">Products</a>
+                    </nav>
+                    <h2 class="faq__title">Can't find the answer to your question?</h2>
+                    <p class="faq__lead">If you didn't find the answer among our frequently asked questions, please get in touch with us.</p>
+                    <div class="faq__actions">
+                        <a href="../kapcsolat/" class="btn btn--primary">Contact us <i class="ph ph-envelope-simple"></i></a>
+                    </div>
+                </div>
+
+                <div class="page-faq__groups">
+                    <!-- Ordering & delivery -->
+                    <div class="page-faq__group" id="faq-orders">
+                        <h2 class="page-faq__group-title">Ordering &amp; delivery</h2>
+                        <div class="accordion" data-accordion>
+                            <div class="accordion__item is-open">
+                                <button class="accordion__trigger" type="button" aria-expanded="true">What delivery options are available and how much do they cost?<i class="ph ph-plus"></i></button>
+                                <div class="accordion__panel">
+                                    <div class="accordion__text">
+                                        <h4>Home delivery by GLS courier</h4>
+                                        <p>Orders are delivered to your home by GLS courier within 1–2 working days of ordering.</p>
+                                        <ul>
+                                            <li>Delivery fee: HUF 1,490</li>
+                                            <li>FREE on orders over HUF 19,000</li>
+                                        </ul>
+                                        <h4>GLS parcel pickup point</h4>
+                                        <p>Your parcel is delivered to the GLS parcel locker of your choice within 1–2 working days of ordering. You can find pickup points with the <a href="https://gls-group.com/HU/hu/depo-csomagpont-kereses/" target="_blank" rel="noopener">GLS parcel locker finder</a>.</p>
+                                        <ul>
+                                            <li>Delivery fee: HUF 1,190</li>
+                                            <li>FREE on orders over HUF 19,000</li>
+                                        </ul>
+                                        <h4>Home delivery by Magyar Posta (MPL)</h4>
+                                        <p>Orders are delivered to your home by Magyar Posta (MPL) within 7–10 working days of ordering.</p>
+                                        <ul>
+                                            <li>Delivery fee: HUF 6,990 (HUF 1,990 delivery + HUF 5,000 administration fee)</li>
+                                            <li>On orders over HUF 18,000, the HUF 5,000 administration fee applies.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion__item">
+                                <button class="accordion__trigger" type="button" aria-expanded="false">How long will it take to receive my order?<i class="ph ph-plus"></i></button>
+                                <div class="accordion__panel">
+                                    <div class="accordion__text">
+                                        <p>GLS delivers your parcel to your home or to a pickup point within 1–2 working days of your order.</p>
+                                        <p>Magyar Posta (MPL) delivers your parcel to your home within 7–10 working days of your order.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion__item">
+                                <button class="accordion__trigger" type="button" aria-expanded="false">What payment methods are available?<i class="ph ph-plus"></i></button>
+                                <div class="accordion__panel">
+                                    <div class="accordion__text">
+                                        <h4>Cash on delivery (+HUF 490)</h4>
+                                        <p>With cash on delivery, the full purchase price and the delivery fee are paid to the courier on delivery, in cash or by bank card.</p>
+                                        <h4>Card payment (free)</h4>
+                                        <p>If you choose card payment, you can pay quickly and securely through Stripe or OTP SimplePay by entering your card details, or by using your existing SimplePay account.</p>
+                                        <h4 class="nm-new">Bank transfer (free)</h4>
+                                        <p class="nm-new">After you place your order, we e-mail you the details needed for the transfer and ship your order as soon as the amount arrives.</p>
+                                        <p>More details: <a href="../fizetes-szallitas/">Payment &amp; delivery</a>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion__item">
+                                <button class="accordion__trigger" type="button" aria-expanded="false">Is the packaging discreet?<i class="ph ph-plus"></i></button>
+                                <div class="accordion__panel">
+                                    <div class="accordion__text">
+                                        <p>Yes. The product labels show the positive effects of the ingredients on mental performance, with no reference to sexual topics, so you can keep the products on a shelf at home or take them to the office. The postal parcel is fully discreet as well.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion__item">
+                                <button class="accordion__trigger" type="button" aria-expanded="false">How does the 60-day money-back guarantee work?<i class="ph ph-plus"></i></button>
+                                <div class="accordion__panel">
+                                    <div class="accordion__text">
+                                        <p>We have been testing and developing our products since 2020, which is why we offer a 100% satisfaction guarantee.</p>
+                                        <p><span class="nm-chg" data-nm="35" data-before="Based on the results of international research, the guarantee applies to orders of at least a 2-month supply of a Premium or Extreme package.">The guarantee applies to our 2- and 3-month men&#x27;s and women&#x27;s packs. It does not apply to DROP.</span></p>
+                                        <p><span class="nm-chg" data-nm="36" data-before="If you feel our product didn&#x27;t work for you, send it back to us within 60 days of receiving the parcel and we will refund the price of the product within 3 working days.">Take the product for the full 60 days. If you feel it didn&#x27;t work for you, send the pack back to us within 65 days of receiving it and we will refund the price within 3 working days.</span></p>
+                                        <p>It is important to return the box in its original postal packaging and to fill in the <a href="../elallasi-nyilatkozat/#garancia">guarantee claim form</a>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion__item">
+                                <button class="accordion__trigger" type="button" aria-expanded="false">Can I order the products abroad?<i class="ph ph-plus"></i></button>
+                                <div class="accordion__panel">
+                                    <div class="accordion__text">
+                                        <p>We deliver only to the European countries below, and only with online payment.</p>
+                                        <h4>Germany</h4>
+                                        <p>Delivery fee: HUF 3,190</p>
+                                        <h4>Region 1</h4>
+                                        <p>Austria, Croatia, Czech Republic, Romania, Slovakia, Slovenia. Delivery fee: HUF 2,990</p>
+                                        <h4>Region 2</h4>
+                                        <p>Belgium, Bulgaria, Liechtenstein, Luxembourg, the Netherlands, Poland, Switzerland. Delivery fee: HUF 9,290</p>
+                                        <h4>Region 3</h4>
+                                        <p>Denmark, France, Ireland, Italy, Monaco, the United Kingdom, Vatican City. Delivery fee: HUF 14,890</p>
+                                        <p>Please check the delivery fees at checkout before ordering. We reserve the right to make changes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Products -->
+                    <div class="page-faq__group" id="faq-products">
+                        <h2 class="page-faq__group-title">Products</h2>
+                        <div class="accordion" data-accordion>
+                            <div class="accordion__item">
+                                <button class="accordion__trigger" type="button" aria-expanded="false">What does "standardised plant extract" mean?<i class="ph ph-plus"></i></button>
+                                <div class="accordion__panel">
+                                    <div class="accordion__text">
+                                        <p>The strength of standardised plant extracts is that every single dose contains a guaranteed, identical amount of active ingredient. This high level of precision means the active-ingredient content of the extract is exactly defined and consistent.</p>
+                                        <p>Standardisation is key for premium-quality plant extracts such as Ashwagandha and Ginseng.</p>
+                                        <p>Both are standardised in our products, guaranteeing a stable and reliable active-ingredient content in every dose.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion__item">
+                                <button class="accordion__trigger" type="button" aria-expanded="false">Are your products suitable for vegans?<i class="ph ph-plus"></i></button>
+                                <div class="accordion__panel">
+                                    <div class="accordion__text">
+                                        <p>Yes. All our products and ingredients are free from dairy and animal-derived products, so they are 100% vegan-friendly.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion__item">
+                                <button class="accordion__trigger" type="button" aria-expanded="false">Is the quality checked?<i class="ph ph-plus"></i></button>
+                                <div class="accordion__panel">
+                                    <div class="accordion__text">
+                                        <p>Our formulas are made exclusively with certified active ingredients tested in an accredited laboratory, in a facility that meets ISO 22000, HACCP and GMP standards.</p>
+                                        <p><span class="nm-chg" data-nm="37" data-before="Our products are authorised by the National Institute of Pharmacy and Nutrition (OGYÉI).">Our products are notified to the National Institute of Pharmacy and Nutrition (OGYÉI).</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion__item">
+                                <button class="accordion__trigger" type="button" aria-expanded="false">Where are the products made?<i class="ph ph-plus"></i></button>
+                                <div class="accordion__panel">
+                                    <div class="accordion__text">
+                                        <p>Our products are developed and manufactured in Hungary.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion__item">
+                                <button class="accordion__trigger" type="button" aria-expanded="false">How should I store the products?<i class="ph ph-plus"></i></button>
+                                <div class="accordion__panel">
+                                    <div class="accordion__text">
+                                        <p>We recommend storing our products in a cool, dry place.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion__item nm-new">
+                                <button class="accordion__trigger" type="button" aria-expanded="false">How should I take the products?<i class="ph ph-plus"></i></button>
+                                <div class="accordion__panel">
+                                    <div class="accordion__text">
+                                        <h4>Men Complex Day</h4>
+                                        <p>3 capsules once a day, after breakfast, with plenty of liquid.</p>
+                                        <h4>Men Complex Night</h4>
+                                        <p>2 capsules a day, before bed.</p>
+                                        <h4>Fury</h4>
+                                        <p>1 sachet a day, dissolved in 2-3 dl of water.</p>
+                                        <h4>Women Complex Day</h4>
+                                        <p>1 sachet a day, dissolved in 2-3 dl of water, in the morning on an empty stomach or 15-30 minutes after a light breakfast.</p>
+                                        <h4>Women Complex Night</h4>
+                                        <p>2 capsules a day after dinner, 45-60 minutes before bed, with plenty of liquid.</p>
+                                        <h4>DROP Electrolytes</h4>
+                                        <p>1 sachet a day, dissolved in 3 dl of water.</p>
+                                        <p>Do not exceed the recommended daily dose.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion__item nm-new">
+                                <button class="accordion__trigger" type="button" aria-expanded="false">How long should I take the products?<i class="ph ph-plus"></i></button>
+                                <div class="accordion__panel">
+                                    <div class="accordion__text">
+                                        <p>Our formulas are designed for daily, continuous use, so we recommend taking them as a 2-3 month course.</p>
+                                        <p>That is also why our 60-day money-back guarantee applies to the 2- and 3-month packs.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion__item nm-new">
+                                <button class="accordion__trigger" type="button" aria-expanded="false">Who should not take the products?<i class="ph ph-plus"></i></button>
+                                <div class="accordion__panel">
+                                    <div class="accordion__text">
+                                        <p>Men Complex, Fury and Women Complex products are not recommended for children, pregnant or breastfeeding women, or people with high blood pressure or heart conditions.</p>
+                                        <p>If you take medication or have a medical condition, consult your doctor before use.</p>
+                                        <p>Food supplements are not a substitute for a varied, balanced diet and a healthy lifestyle.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion__item">
+                                <button class="accordion__trigger" type="button" aria-expanded="false">Can Nutrimind® products have side effects?<i class="ph ph-plus"></i></button>
+                                <div class="accordion__panel">
+                                    <div class="accordion__text">
+                                        <p>Nutrimind® products mostly contain 100% natural plant ingredients, so side effects are extremely rare. However, as with any dietary supplement, individual sensitivity can occur. If you notice any unusual symptoms, we recommend that you stop using the product and consult your doctor.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="site-footer">
+        <!-- Top: logo + newsletter, link columns -->
+        <div class="container site-footer__top">
+            <div class="site-footer__signup">
+                <img src="https://nutrimind-chi.vercel.app/images/nutrimind-logo-white.png?v=2e15eb1d8e" alt="Nutrimind" width="200" height="30" loading="lazy">
+                <p class="site-footer__lead">Subscribe to our newsletter to be the first to know about our latest promotions and exclusive content!</p>
+                <form class="newsletter" data-notify-form>
+                    <label class="visually-hidden" for="newsletter-email">Email address</label>
+                    <input class="newsletter__input" id="newsletter-email" type="email" placeholder="E-mail address" required>
+                    <button class="btn btn--light" type="submit">Subscribe <i class="ph-bold ph-caret-right"></i></button>
+                </form>
+            </div>
+
+            <nav class="site-footer__nav" aria-label="Footer">
+                <div class="site-footer__col">
+                    <h6 class="site-footer__heading"><span class="nm-chg" data-nm="33" data-before="Nutrimind Ltd.">Nutrimind Kft.</span></h6>
+                    <ul class="site-footer__contact">
+                        <li><strong>Address:</strong> <span class="nm-chg" data-nm="34" data-before="1027 Budapest, Csalogány Street 3/C">1027 Budapest, Csalogány utca 3/C</span></li>
+                        <li><strong>Tax number:</strong> 27341207-2-41</li>
+                        <li><strong>E-mail:</strong> <a href="mailto:info@nutrimind.hu">info@nutrimind.hu</a></li>
+                    </ul>
+                </div>
+                <div class="site-footer__col">
+                    <h6 class="site-footer__heading">Purchase &amp; information</h6>
+                    <ul class="site-footer__links">
+                        <li><a href="#">Frequently asked questions</a></li>
+                        <li><a href="#">My account</a></li>
+                        <li><a href="https://nutrimind-chi.vercel.app/index-v2.html#journal">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="site-footer__col">
+                    <h6 class="site-footer__heading">General information</h6>
+                    <ul class="site-footer__links">
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Band: tagline, social cells, language -->
+        <div class="site-footer__band">
+            <div class="container site-footer__band-inner">
+                <p class="site-footer__tagline">Natural vitality,<br>backed by science.</p>
+                <div class="site-footer__socials">
+                    <a href="https://www.facebook.com/nutrimind.hu" class="site-footer__social" aria-label="Facebook" target="_blank" rel="noopener"><i class="ph-fill ph-facebook-logo"></i></a>
+                    <a href="https://www.instagram.com/nutrimind_hu/" class="site-footer__social" aria-label="Instagram" target="_blank" rel="noopener"><i class="ph ph-instagram-logo"></i></a>
+                    <a href="#" class="site-footer__social" aria-label="TikTok"><i class="ph-fill ph-tiktok-logo"></i></a>
+                </div>
+                <div class="site-footer__locale">
+                    <label class="locale">
+                        <span class="visually-hidden">Language</span>
+                        <i class="ph ph-globe-simple"></i>
+                        <select class="locale__select">
+                            <option>Magyar · HUF</option>
+                            <option selected>English · HUF</option>
+                        </select>
+                        <i class="ph ph-caret-down locale__caret"></i>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom bar: copyright, company, legal -->
+        <div class="site-footer__bar">
+            <div class="container site-footer__bar-inner">
+                <p class="site-footer__copy"><i class="ph ph-copyright"></i>2026, <strong><span class="nm-chg" data-nm="33" data-before="Nutrimind Ltd.">Nutrimind Kft.</span></strong></p>
+                <ul class="payments" aria-label="Accepted payment methods">
+                    <li><img src="https://nutrimind-chi.vercel.app/images/payment-visa.webp?v=e03cf470cc" alt="Visa" width="48" height="30" loading="lazy"></li>
+                    <li><img src="https://nutrimind-chi.vercel.app/images/payment-mastercard.webp?v=a9cf3e3c12" alt="Mastercard" width="48" height="30" loading="lazy"></li>
+                    <li><img src="https://nutrimind-chi.vercel.app/images/payment-amex.webp?v=14e0b3d1e8" alt="American Express" width="48" height="30" loading="lazy"></li>
+                    <li><img src="https://nutrimind-chi.vercel.app/images/payment-google-pay.webp?v=640368d14d" alt="Discover" width="48" height="30" loading="lazy"></li>
+                    <li><img src="https://nutrimind-chi.vercel.app/images/payment-apple-pay.webp?v=2e92ed8ce3" alt="Diners Club" width="48" height="30" loading="lazy"></li>
+                    <li><img src="https://nutrimind-chi.vercel.app/images/payment-paypal.webp?v=17d4714da3" alt="PayPal" width="48" height="30" loading="lazy"></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Toast -->
+    <div class="toast" data-toast role="status" aria-live="polite"><i class="ph-fill ph-check-circle"></i><span data-toast-text>Added to cart</span></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="https://nutrimind-chi.vercel.app/js/script.js?v=32154dd02f"></script>
+<script id="preview-language-switch">
+(() => {
+    const destinations = {EN: '../../belso-oldalak/faq/', HU: '../../belso-oldalak-hu/faq/'};
+    function navigate(language, event) {
+        event.preventDefault();
+        event.stopImmediatePropagation();
+        location.href = destinations[language] + location.search;
+    }
+    // Floating bottom-right switch, like the Weglot switcher on the homepage preview.
+    const current = document.documentElement.lang === 'hu' ? 'HU' : 'EN', other = current === 'HU' ? 'EN' : 'HU';
+    const labels = {EN: 'English', HU: 'Magyar'};
+    const floating = document.createElement('a');
+    floating.id = 'nm-lang-float'; floating.href = destinations[other];
+    floating.setAttribute('aria-label', 'Switch to ' + labels[other]);
+    floating.innerHTML = '<span style="opacity:.55">' + labels[current] + '</span> &rarr; <strong>' + labels[other] + '</strong>';
+    floating.style.cssText = 'position:fixed;right:24px;bottom:96px;z-index:2147483645;display:flex;gap:6px;align-items:center;' +
+        'padding:10px 16px;border-radius:999px;background:#fff;color:#17251b;border:1px solid #d4ded7;' +
+        'box-shadow:0 4px 20px #0003;font:600 14px/1 system-ui;text-decoration:none;';
+    floating.addEventListener('click', event => navigate(other, event));
+    if (innerWidth < 768) floating.style.bottom = document.documentElement.dataset.nmMode ? '140px' : '96px';
+    document.body.append(floating);
+    window.addEventListener('click', event => {
+        const button = event.target.closest?.('.announcement__lang-btn');
+        const language = button?.textContent.trim();
+        if (destinations[language]) navigate(language, event);
+    }, true);
+    window.addEventListener('change', event => {
+        if (event.target.matches?.('footer select.locale__select')) {
+            const label = event.target.selectedOptions[0]?.textContent.trim();
+            if (label === 'Magyar · HUF') navigate('HU', event);
+            if (label === 'English · HUF') navigate('EN', event);
+        }
+    }, true);
+})();
+</script>
+<script id="nm-guide-script">
+(() => {
+    // "How to choose" follows the product filter: the women's Day formula is a drink powder only,
+    // and the section does not apply to DROP electrolytes, so it is hidden there.
+    const DAY = 'Taken in the morning, for long and demanding days. Capsules or a drink powder.';
+    const texts = {
+        all: 'Taken in the morning, for long and demanding days. For men as capsules or a drink powder, for women as a drink powder.',
+        bundle: 'Taken in the morning, for long and demanding days. For men as capsules or a drink powder, for women as a drink powder.',
+        men: DAY,
+        women: 'Taken in the morning, for long and demanding days. A drink powder, in two flavours.',
+    };
+    const section = document.querySelector('.plp-guide');
+    const day = section?.querySelector('.plp-guide__step p');
+    if (!section || !day) return;
+    function update() {
+        const filter = document.querySelector('[data-filter].is-active')?.dataset.filter || 'all';
+        const hide = filter === 'drop';
+        section.style.display = hide ? 'none' : '';
+        const wanted = texts[filter] || texts.all;
+        if (!hide && day.dataset.nmGuide !== filter) {
+            day.dataset.nmGuide = filter; day.textContent = wanted;
+        }
+    }
+    new MutationObserver(update).observe(document.querySelector('[data-filter]')?.parentElement || document.body,
+        {subtree: true, attributes: true, attributeFilter: ['class']});
+    update();
+})();
+</script>
+<script id="nm-copy-script">
+(() => {
+    const changes = [[1, "Announcement bar", "Take it for 60 days. Not satisfied? Get your money back", "Take any bundle for 60 days. Not satisfied? Get your money back"], [2, "Product names", "Men Complex Night Pro", "Men Complex Night"], [2, "Product names", "Men Complex Day Fury", "Fury"], [2, "Product names", "Premium Male Power Package", "Premium Male Vitality Pack"], [2, "Product names", "Extreme Male Power Package", "Extreme Male Vitality Pack"], [2, "Product names", "Women Complex Day & Night", "Women Complex Day & Night Pack"], [2, "Product names", "Premium Vitality Bundle", "Premium Male Vitality Pack"], [2, "Product names", "Day & Night Bundle", "Women Complex Day & Night Pack"], [3, "Card subtitles", "Day in the morning, Night Pro at bedtime", "Day in the morning, Night at bedtime"], [3, "Card subtitles", "Day Fury by day, Night Pro by night", "Fury by day, Night by night"], [4, "Prices & savings", "10,990 Ft", "11,990 Ft"], [4, "Prices & savings", "7,990 Ft", "8,990 Ft"], [4, "Prices & savings", "12,990 Ft", "13,990 Ft"], [4, "Prices & savings", "15,990 Ft", "16,990 Ft"], [4, "Prices & savings", "18,980 Ft", "20,980 Ft"], [4, "Prices & savings", "16,990 Ft", "17,990 Ft"], [4, "Prices & savings", "from HUF 15,990", "from HUF 16,990"], [4, "Prices & savings", "Save up to 25%", "Save 19%"], [6, "Women focus points (Peti, 4 Nov)", "Energy, focus, PMS & stress", "Energy, focus, weight control"], [6, "Women focus points (Peti, 4 Nov)", "Hormonal balance & sleep", "Hormonal balance, deep sleep, recovery"], [6, "Women focus points (Peti, 4 Nov)", "Energy & focus for the day", "Energy, focus, weight control"], [6, "Women focus points (Peti, 4 Nov)", "A separate routine for the evening", "Hormonal balance, deep sleep, recovery"], [5, "Promo tile", "Packages cost less than buying separately, and 2- and 3-month packages come with a 60-day money-back guarantee.", "Packages are better value than buying the products separately, and 2- and 3-month packages come with a 60-day money-back guarantee."], [33, "Common copy", "Nutrimind Ltd.", "Nutrimind Kft."], [34, "Common copy", "1027 Budapest, Csalog\u00e1ny Street 3/C", "1027 Budapest, Csalog\u00e1ny utca 3/C"], [35, "Page copy", "Based on the results of international research, the guarantee applies to orders of at least a 2-month supply of a Premium or Extreme package.", "The guarantee applies to our 2- and 3-month men's and women's packs. It does not apply to DROP."], [36, "Page copy", "If you feel our product didn't work for you, send it back to us within 60 days of receiving the parcel and we will refund the price of the product within 3 working days.", "Take the product for the full 60 days. If you feel it didn't work for you, send the pack back to us within 65 days of receiving it and we will refund the price within 3 working days."], [37, "Page copy", "Our products are authorised by the National Institute of Pharmacy and Nutrition (OGY\u00c9I).", "Our products are notified to the National Institute of Pharmacy and Nutrition (OGY\u00c9I)."]], attributes = {"Men Complex Night Pro bottle": "Men Complex Night bottle", "Men Complex Day Fury drink powder box": "Fury drink powder box", "Men Complex Day Fury box": "Fury box", "Men Complex Day and Night Pro bottles": "Men Complex Day and Night bottles", "Men Complex Night Pro under a moonlit sky": "Men Complex Night under a moonlit sky", "Add Premium Male Power Package to cart": "Add Premium Male Vitality Pack to cart", "Add Men Complex Day Fury to cart": "Add Fury to cart", "Add Men Complex Night Pro to cart": "Add Men Complex Night to cart", "Add Extreme Male Power Package to cart": "Add Extreme Male Vitality Pack to cart", "Add Women Complex Day and Night to cart": "Add Women Complex Day & Night Pack to cart"};
+    const norm = text => text.replace(/\s+/g, ' ').trim();
+    const byBefore = new Map(changes.map(c => [norm(c[2]), c]));
+    let mode = 'changes', queued = false;
+    document.documentElement.dataset.nmMode = mode;
+    const panel = document.createElement('aside');
+    panel.id = 'nm-panel'; panel.setAttribute('aria-label', 'Copy preview controls');
+    panel.innerHTML = '<section id="nm-list" aria-labelledby="nm-title" hidden><h2 id="nm-title">Nutrimind inner page — copy preview</h2><p>Green outline = changed copy. Hover a change to see the original.</p><ol></ol></section><div id="nm-bar"><select id="nm-mode" aria-label="Preview mode"><option value="changes">Show changes</option><option value="clean">New copy</option><option value="original">Original</option></select><button type="button" id="nm-toggle" aria-controls="nm-list" aria-expanded="false"></button></div>';
+    const groups = [...new Set(changes.map(c => c[0]))];
+    const drawer = panel.querySelector('#nm-list'), toggle = panel.querySelector('#nm-toggle');
+    function setOpen(open) {
+        drawer.hidden = !open; toggle.setAttribute('aria-expanded', String(open));
+        toggle.textContent = `Changes (${groups.length}) ${open ? '▾' : '▴'}`;
+    }
+    setOpen(false);
+    toggle.addEventListener('click', () => setOpen(drawer.hidden));
+    for (const number of groups) {
+        const rows = changes.filter(c => c[0] === number);
+        const li = document.createElement('li'), button = document.createElement('button');
+        button.type = 'button';
+        button.textContent = `#${number} · ${rows[0][1]} — ${rows.map(c => c[2] + ' → ' + c[3]).join('; ')}`;
+        button.addEventListener('click', () => {
+            const elements = [...document.querySelectorAll(`[data-nm="${number}"]`)];
+            const element = elements.find(e => e.getClientRects().length && !e.closest('[inert]'));
+            if (!element) return;
+            element.scrollIntoView({behavior: 'smooth', block: 'center'});
+            element.classList.remove('nm-flash'); void element.offsetWidth; element.classList.add('nm-flash');
+            setTimeout(() => element.classList.remove('nm-flash'), 3200);
+        });
+        li.append(button); panel.querySelector('ol').append(li);
+    }
+    document.body.append(panel);
+    const tip = document.createElement('div'); tip.id = 'nm-tooltip'; tip.hidden = true;
+    tip.setAttribute('role', 'tooltip'); document.body.append(tip);
+    function tooltip(element) {
+        if (!element || mode !== 'changes') {tip.hidden = true; return;}
+        tip.textContent = 'BEFORE: ' + element.dataset.before; tip.hidden = false;
+        const box = element.getBoundingClientRect();
+        tip.style.left = Math.max(12, Math.min(box.left, innerWidth - tip.offsetWidth - 12)) + 'px';
+        tip.style.top = Math.max(12, Math.min(box.bottom + 12, innerHeight - tip.offsetHeight - 12)) + 'px';
+    }
+    document.addEventListener('pointerover', event => tooltip(event.target.closest?.('.nm-chg')));
+    document.addEventListener('pointerout', event => {
+        if (event.target.closest?.('.nm-chg') !== event.relatedTarget?.closest?.('.nm-chg')) tip.hidden = true;
+    });
+    document.addEventListener('scroll', () => {tip.hidden = true;}, true);
+    function apply() {
+        observer.disconnect();
+        try {
+            const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+                acceptNode(node) {
+                    return node.parentElement?.closest('script,style,noscript,template,svg,#nm-panel,#nm-tooltip,.nm-chg')
+                        ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT;
+                }
+            });
+            const nodes = []; let node;
+            while ((node = walker.nextNode())) nodes.push(node);
+            for (const node of nodes) {
+                const change = byBefore.get(norm(node.nodeValue));
+                if (!change) continue;
+                const span = document.createElement('span'); span.className = 'nm-chg';
+                span.dataset.nm = change[0]; span.dataset.before = change[2];
+                node.replaceWith(document.createTextNode(node.nodeValue.match(/^\s*/)[0]), span,
+                                 document.createTextNode(node.nodeValue.match(/\s*$/)[0]));
+            }
+            // Serialized metadata also restores theme-created clones in every mode.
+            for (const element of document.querySelectorAll('.nm-chg[data-before]')) {
+                const change = byBefore.get(norm(element.dataset.before));
+                if (!change) continue;
+                const wanted = mode === 'original' ? change[2] : change[3];
+                if (element.textContent !== wanted) element.textContent = wanted;
+            }
+            for (const element of document.querySelectorAll('[alt],[aria-label],[placeholder],[title]')) {
+                for (const name of ['alt', 'aria-label', 'placeholder', 'title']) {
+                    const before = element.getAttribute(name);
+                    if (before !== null && Object.hasOwn(attributes, norm(before)))
+                        element.setAttribute(name, attributes[norm(before)]);
+                }
+            }
+        } finally {
+            observer.observe(document.body, {subtree:true, childList:true, characterData:true,
+                                            attributes:true, attributeFilter:['alt','aria-label','placeholder','title']});
+        }
+    }
+    const observer = new MutationObserver(() => {
+        if (!queued) {queued = true; requestAnimationFrame(() => {queued = false; apply();});}
+    });
+    panel.querySelector('select').addEventListener('change', event => {
+        mode = event.target.value; document.documentElement.dataset.nmMode = mode; tip.hidden = true; apply();
+    });
+    apply();
+})();
+</script>
+</body>
+</html>
