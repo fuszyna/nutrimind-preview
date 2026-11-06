@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base href="https://nutrimind-chi.vercel.app/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Male Vitality Pack | Nutrimind®</title>
+    <meta name="description" content="Energy by day, testosterone support by night. Men Complex Day and Night: the 24-hour men's routine, developed and made in Hungary.">
+    <meta name="robots" content="noindex">
+    <link rel="icon" type="image/png" href="images/favicon.png?v=c9e994e33e">
+    <link rel="apple-touch-icon" href="images/favicon.png?v=c9e994e33e">
+    <link rel="preload" href="fonts/HouschkaPro-Medium.woff2?v=3a2ebcabce" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+    <link rel="stylesheet" href="css/style.css?v=02dbe5901d">
+    <link rel="stylesheet" href="css/responsive.css?v=8a86c5f655">
+<style id="nm-fullbleed">/* Fury hero: full-bleed scene (Mars Men-style). Desktop = 16:9 extended scene, mobile = original portrait shot */
+.lp-fhero--scene{overflow:hidden;background:#040a16}
+.lp-fhero--scene::before{display:none}
+.lp-fhero--scene .lp-fhero__ring{display:none}
+.lp-fhero__bg{inset:0;left:0;top:0;bottom:auto;width:100%;max-width:none;height:100%;aspect-ratio:auto;object-fit:cover;object-position:50% 12%;transform:none;-webkit-mask-image:none;mask-image:none}
+.lp-fhero--scene::after{background:linear-gradient(180deg,rgba(4,10,22,.9) 0%,rgba(4,10,22,.55) 22%,rgba(4,10,22,0) 42%,rgba(4,10,22,0) 72%,rgba(4,10,22,.85) 100%)}
+@media (max-width:767px){
+  .lp-fhero--scene{padding-bottom:var(--space-32)}
+  .lp-fhero__scene{display:block;width:100vw;max-width:none;margin:-64px calc(50% - 50vw) -56px;height:auto;aspect-ratio:1/1;object-fit:cover;border-radius:0;
+    -webkit-mask-image:linear-gradient(180deg,transparent 0%,#000 18%,#000 82%,transparent 100%);mask-image:linear-gradient(180deg,transparent 0%,#000 18%,#000 82%,transparent 100%)}
+  .lp-fhero__doses{position:relative;z-index:1}
+}
+@media (min-width:768px){
+  .lp-fhero--scene .lp-fhero__bg{left:50%;width:auto;height:100%;aspect-ratio:1/1;transform:translateX(-50%);object-fit:cover;top:auto;bottom:0;
+    -webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 14%,#000 86%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0%,#000 14%,#000 86%,transparent 100%)}
+}
+</style>
+<style id="nm-theme">
+/* Header + hero CTA themed to the scene */
+.announcement{background:#081428;color:#A9C6F5;border-bottom:1px solid rgba(120,160,230,.2)}
+.announcement i{color:#A9C6F5}
+.lp-header .site-header__bar{background:rgba(6,13,28,.94);color:#fff;box-shadow:0 1px 0 rgba(120,160,230,.2),0 10px 30px rgba(0,0,0,.35);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
+.lp-header .site-header__logo img{filter:brightness(0) invert(1)}
+.lp-header__rating{color:rgba(255,255,255,.85)}
+.lp-header .btn--primary,.lp-fhero__buy .btn{--btn-bg:transparent;--btn-color:#fff;--btn-border:transparent;--btn-accent:#fff;--btn-accent-text:#FF6B3D;background-image:linear-gradient(90deg,#FFA048,#FF6B3D);box-shadow:0 10px 30px rgba(255,120,60,.35)}
+.lp-header .btn--primary:hover,.lp-fhero__buy .btn:hover{color:#FF6B3D}
+.lp-fhero--scene .lp-fhero__title em{color:#FF8F57}.lp-fhero .eyebrow{color:#A9C6F5}.lp-fhero .eyebrow::before{background:#A9C6F5}.announcement__item{color:#A9C6F5}</style>
+<meta name="robots" content="noindex,nofollow">
+</head>
+<!-- LANDING 1 · Men Complex Day + Night · testosterone focus (paid traffic).
+     Shares the homepage's brand system (colours, type, buttons, header) with landing-specific layouts.
+     No shop navigation: every CTA leads to the one offer. data-landing / data-track = measurement hooks (brief §18). -->
+<body class="lp" data-landing="l1-men-premium">
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- ===================== ANNOUNCEMENT BAR ===================== -->
+    <div class="announcement">
+        <div class="container announcement__container">
+            <div class="announcement__track" data-rotator>
+                <p class="announcement__item is-active"><i class="ph ph-truck"></i>Free GLS Premium shipping on orders over 19,000 Ft</p>
+                <p class="announcement__item"><i class="ph ph-shield-check"></i>60-day money-back guarantee on 2- and 3-month packages</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================== HEADER (homepage bar, docked; rating · logo · one CTA) ===================== -->
+    <header class="site-header lp-header" data-header>
+        <div class="container site-header__container">
+            <div class="site-header__bar">
+                <span class="lp-header__rating"><span class="stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star-half"></i></span>4.8 · 25,000+ customers</span>
+                <span class="site-header__logo">
+                    <img src="images/nutrimind-logo-blue.png?v=6620bfafad" alt="Nutrimind logo" width="150" height="23">
+                </span>
+                <div class="site-header__actions">
+                    <a href="#offer" class="btn btn--primary btn--sm" data-track="header-cta">Order now <i class="ph-bold ph-caret-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <!-- ===================== HERO (message match: energy by day, testosterone by night) ===================== -->
+        <section class="lp-fhero lp-fhero--stage lp-fhero--scene">
+            <img class="lp-fhero__bg" src="https://fuszyna.github.io/nutrimind-preview/mars-hero-men/men-m.jpg" alt="" width="1200" height="1200" fetchpriority="high">
+            <div class="container lp-fhero__container">
+                <div class="lp-fhero__head">
+                    <span class="eyebrow eyebrow--light">Premium Male Vitality Pack · Day + Night</span>
+                    <h1 class="lp-fhero__title">Energy by day.<br><em>Testosterone support by night.</em></h1>
+                </div>
+                <div class="lp-fhero__stage">
+                    <img class="lp-fhero__scene" src="https://fuszyna.github.io/nutrimind-preview/mars-hero-men/men-m.jpg" alt="Men Complex Day and Men Complex Night bottles on a dark rock" width="1200" height="1200" loading="lazy">
+                    <ul class="lp-fhero__doses"><li class="lp-fhero__dose lp-fhero__dose--1"><strong>Day</strong>3 capsules after breakfast</li><li class="lp-fhero__dose lp-fhero__dose--2"><strong>Night</strong>2 capsules before bed</li><li class="lp-fhero__dose lp-fhero__dose--3"><strong>10 mg</strong>zinc in Night</li></ul>
+                </div>
+                <div class="lp-fhero__buy">
+                    <a href="#offer" class="btn btn--light" data-track="hero-cta">Choose your package <i class="ph-bold ph-caret-down"></i></a>
+                    <p class="lp-fhero__price">from <strong>11,997 Ft</strong> / month</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== PROOF STRIP (numbers) ===================== -->
+        <section class="lp-stats" aria-label="Why Nutrimind">
+            <div class="container">
+                <ul class="lp-stats__list">
+                    <li><strong>25,000+</strong><span>customers</span></li>
+                    <li><strong>4.8<i class="ph-fill ph-star"></i></strong><span>average rating</span></li>
+                    <li><strong>60-day</strong><span>money-back guarantee</span></li>
+                    <li><strong>Eurofins</strong><span>lab-tested, made in Hungary</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ===================== FOUNDATION (why balanced testosterone matters + approved claims) ===================== -->
+        <section class="section lp-foundation lp-hex">
+            <div class="container lp-foundation__container">
+                <div class="lp-foundation__visual reveal">
+                    <img src="images/men-hero-night-moonlight.webp?v=44fedbfddf" alt="Men Complex Night bottle on a rock under a moonlit sky" loading="lazy" width="1120" height="1400">
+                </div>
+
+                <div class="lp-foundation__content reveal">
+                    <span class="eyebrow eyebrow--light">Why it matters</span>
+                    <h2 class="lp-foundation__title">Balanced testosterone is the foundation</h2>
+                    <p class="lp-foundation__lead">It's what your drive, energy, focus and strength are built on. Night gives your body the micronutrients that support it:</p>
+
+                    <!-- Each line uses an EU-authorised health claim for an ingredient in the package.
+                         [COMPLIANCE-CHECK: Péter's decision] the libido / sperm wording in the two headlines is the client's. -->
+                    <ul class="lp-foundation__list">
+                        <li><i class="ph-fill ph-lightning"></i><div><strong>Reclaim energy</strong><span>Vitamins B6, B12 and magnesium contribute to the reduction of tiredness and fatigue.</span></div></li>
+                        <li><i class="ph-bold ph-gender-male"></i><div><strong>Fuel your libido + sexual performance</strong><span>Zinc contributes to the maintenance of normal testosterone levels in the blood.</span></div></li>
+                        <li><i class="ph-fill ph-dna"></i><div><strong>Support fertility + healthy sperm production</strong><span>Zinc contributes to normal fertility and reproduction.</span></div></li>
+                        <li><i class="ph-fill ph-brain"></i><div><strong>Sharpen your focus</strong><span>Vitamins B6, B12 and magnesium contribute to normal psychological function.</span></div></li>
+                        <li><i class="ph-fill ph-barbell"></i><div><strong>Defend your strength</strong><span>Magnesium and vitamin D3 contribute to normal muscle function.</span></div></li>
+                        <li><i class="ph-fill ph-shield-check"></i><div><strong>Stay resilient</strong><span>Zinc and vitamin D3 contribute to the normal function of the immune system.</span></div></li>
+                    </ul>
+
+                    <a href="#offer" class="btn lp-cta-pulse" data-track="foundation-cta"><span>Choose your package</span><i class="ph-bold ph-arrow-down"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== HOW IT WORKS (24-hour timeline) ===================== -->
+        <section class="section lp-routine" id="how-it-works">
+            <div class="container lp-routine__container">
+                <div class="section-head section-head--center reveal">
+                    <span class="eyebrow">How it works</span>
+                    <h2 class="section-head__title">The 24-hour system of male vitality</h2>
+                    <p class="section-head__lead">Two separate products with different compositions, each doing its own job at its own time of day.</p>
+                </div>
+
+                <div class="lp-timeline">
+                    <article class="lp-slot lp-slot--day reveal">
+                        <span class="lp-slot__clock"><i class="ph-fill ph-sun"></i>08:00</span>
+                        <div class="lp-slot__card">
+                            <img class="lp-slot__pack" src="images/men-complex-day-bottle.webp?v=51f6768a63" alt="Men Complex Day bottle" loading="lazy">
+                            <div class="lp-slot__body">
+                                <span class="lp-slot__badge"><i class="ph-fill ph-flask"></i>6 active ingredients</span>
+                                <h3 class="lp-slot__title">Men Complex Day</h3>
+                                <p class="lp-slot__dose">3 capsules after breakfast</p>
+                                <p class="lp-slot__text">The daytime half, for long and demanding days. Plant extracts and amino acids in a vegan DRcaps® capsule.</p>
+                                <ul class="lp-slot__chips"><li>L-citrulline 600 mg</li><li>L-arginine 500 mg</li><li>Maca 10:1 300 mg</li><li>Korean ginseng 200 mg</li></ul>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="lp-slot lp-slot--night reveal">
+                        <span class="lp-slot__clock"><i class="ph-fill ph-moon"></i>22:00</span>
+                        <div class="lp-slot__card">
+                            <img class="lp-slot__pack" src="images/men-complex-night-bottle.webp?v=6e7ed0e654" alt="Men Complex Night bottle" loading="lazy">
+                            <div class="lp-slot__body">
+                                <span class="lp-slot__badge"><i class="ph-fill ph-flask"></i>12 active ingredients</span>
+                                <h3 class="lp-slot__title">Men Complex Night</h3>
+                                <p class="lp-slot__dose">2 capsules before bed</p>
+                                <p class="lp-slot__claim"><i class="ph-fill ph-seal-check"></i><span><strong>10 mg zinc (100% NRV):</strong> contributes to the maintenance of normal testosterone levels in the blood.</span></p>
+                                <p class="lp-slot__claim"><i class="ph-fill ph-seal-check"></i><span><strong>4.1 mg vitamin B6:</strong> contributes to the regulation of hormonal activity.</span></p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="lp-cta-row reveal">
+                    <a href="#offer" class="btn lp-cta-pulse" data-track="routine-cta"><span>Choose your package</span><i class="ph-bold ph-arrow-down"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== PROBLEM (statement + situations) ===================== -->
+        <section class="section lp-problem">
+            <div class="container lp-problem__container">
+                <div class="lp-problem__statement lp-hex reveal">
+                    <span class="eyebrow eyebrow--light">Sound familiar?</span>
+                    <h2 class="lp-problem__title">After 35, testosterone declines on its own.</h2>
+                    <p class="lp-problem__text">Don't let your routine decline with it. And don't expect everything from a single capsule: you need <strong>one formula for the day</strong> and <strong>another for the night</strong>.</p>
+                </div>
+                <ul class="lp-problem__list">
+                    <li class="reveal"><i class="ph ph-briefcase"></i><div><strong>Demanding work, high stress</strong><span>Long days, physical or mental, and you're still expected at 100%.</span></div></li>
+                    <li class="reveal"><i class="ph ph-battery-low"></i><div><strong>The afternoon slump</strong><span>By 3 pm the tank is empty and coffee no longer fixes it.</span></div></li>
+                    <li class="reveal"><i class="ph ph-moon-stars"></i><div><strong>Too little sleep</strong><span>Short nights, slow mornings, recovery that doesn't keep up.</span></div></li>
+                    <li class="reveal"><i class="ph ph-heart"></i><div><strong>Expectations at home too</strong><span>Performance doesn't stop when the workday ends.</span></div></li>
+                </ul>
+                <div class="lp-cta-row reveal">
+                    <a href="#offer" class="btn lp-cta-pulse" data-track="problem-cta"><span>Choose your package</span><i class="ph-bold ph-arrow-down"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== DECLINE (age-related testosterone decline chart) ===================== -->
+        <section class="section lp-decline">
+            <div class="container lp-decline__container">
+                <figure class="lp-decline__chart reveal">
+                    <!-- Illustrative curve only, not plotted data. -->
+                    <svg viewBox="0 0 560 320" role="img" aria-labelledby="lp-decline-chart-title">
+                        <title id="lp-decline-chart-title">Illustrative chart: total testosterone peaks at age 30 and declines by 1% a year from there.</title>
+                        <defs>
+                            <linearGradient id="lp-decline-fill" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0%" stop-color="currentColor" stop-opacity="0.22"/>
+                                <stop offset="100%" stop-color="currentColor" stop-opacity="0"/>
+                            </linearGradient>
+                            <linearGradient id="lp-decline-man-fill" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0%" stop-color="currentColor" stop-opacity="0.95"/>
+                                <stop offset="100%" stop-color="currentColor" stop-opacity="0.35"/>
+                            </linearGradient>
+                            <symbol id="lp-decline-man" viewBox="0 0 40 100">
+                                <circle cx="20" cy="8.5" r="7.5"/>
+                                <path d="M13,18 L6,20 Q2,21 1.6,26 L0.5,50 Q0.5,53 3,53 Q4.6,53 4.7,50 L6.2,31 L7.6,52 L9,96 Q9,99 12,99 L15,99 Q17.5,99 17.5,96 L19.4,57 Q20,55.5 20.6,57 L22.5,96 Q22.5,99 25,99 L28,99 Q31,99 31,96 L32.4,52 L33.8,31 L35.3,50 Q35.4,53 37,53 Q39.5,53 39.5,50 L38.4,26 Q38,21 34,20 L27,18 Q20,16 13,18 Z"/>
+                            </symbol>
+                        </defs>
+                        <rect class="lp-decline__zone" x="173" y="20" width="367" height="250" rx="8"/>
+                        <text class="lp-decline__zone-label" x="184" y="40">From 30: −1% a year</text>
+                        <g class="lp-decline__grid">
+                            <line x1="50" y1="70" x2="540" y2="70"/><line x1="50" y1="120" x2="540" y2="120"/><line x1="50" y1="170" x2="540" y2="170"/><line x1="50" y1="220" x2="540" y2="220"/><line x1="50" y1="270" x2="540" y2="270"/>
+                        </g>
+                        <path class="lp-decline__area" d="M50,255 C95,175 130,90 173,90 L540,171 L540,270 L50,270 Z"/>
+                        <!-- Men shrink and fade under the curve as testosterone declines (ages 30 / 50 / 70) -->
+                        <g class="lp-decline__men" aria-hidden="true">
+                            <ellipse class="lp-decline__shadow" cx="172.5" cy="270" rx="26" ry="4"/>
+                            <ellipse class="lp-decline__shadow" cx="295" cy="270" rx="18" ry="3"/>
+                            <ellipse class="lp-decline__shadow" cx="417.5" cy="270" rx="11" ry="2"/>
+                            <use class="lp-decline__man lp-decline__man--1" href="#lp-decline-man" x="142.9" y="122" width="59.2" height="148"/>
+                            <use class="lp-decline__man lp-decline__man--2" href="#lp-decline-man" x="274.2" y="166" width="41.6" height="104"/>
+                            <use class="lp-decline__man lp-decline__man--3" href="#lp-decline-man" x="405.5" y="210" width="24" height="60"/>
+                        </g>
+                        <path class="lp-decline__now" d="M50,255 C95,175 130,90 173,90 L540,171"/>
+                        <circle class="lp-decline__dot" cx="173" cy="90" r="5"/>
+                        <g class="lp-decline__axis">
+                            <text x="50" y="294">10</text><text x="111" y="294">20</text><text x="173" y="294">30</text><text x="234" y="294">40</text><text x="295" y="294">50</text><text x="356" y="294">60</text><text x="418" y="294">70</text><text x="479" y="294">80</text><text x="540" y="294">90</text>
+                            <text class="lp-decline__axis-title" x="295" y="316">Age</text>
+                            <text class="lp-decline__axis-title" x="-145" y="22" transform="rotate(-90)">Total testosterone</text>
+                        </g>
+                    </svg>
+                </figure>
+
+                <div class="lp-decline__content reveal">
+                    <span class="eyebrow">The bigger picture</span>
+                    <h2 class="section-head__title">A generation of men running on <span class="lp-accent">empty</span></h2>
+                    <p class="lp-decline__text"><strong>Research shows</strong> that average testosterone levels in men have fallen across generations, independent of normal age-related decline. On top of that, levels naturally drop with age, by 1% a year from age 30.</p>
+                    <p class="lp-decline__punch">Chronic stress. Short sleep. Processed food. Long days at the desk.</p>
+                    <p class="lp-decline__text">Modern life takes its toll, and many men feel less energetic, less focused and slower to bounce back, then write it off as "just getting older".</p>
+                    <p class="lp-decline__text"><strong>It doesn't have to be that way.</strong> The Nutrimind® day + night system supports your energy, focus and vitality, around the clock.</p>
+                </div>
+                <div class="lp-cta-row reveal">
+                    <a href="#offer" class="btn lp-cta-pulse" data-track="decline-cta"><span>Choose your package</span><i class="ph-bold ph-arrow-down"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== OFFER (package picker: primary conversion point) ===================== -->
+        <section class="section lp-offer" id="offer">
+            <div class="container">
+                <div class="lp-offer__box">
+                    <div class="lp-offer__media reveal">
+                        <span class="lp-offer__badge">Save up to 25%</span>
+                        <img src="images/men-bundle-day-night-bottles.webp?v=0557ed3ac0" alt="Men Complex Day and Men Complex Night bottles" loading="lazy">
+                        <ul class="lp-offer__includes">
+                            <li><i class="ph-fill ph-check-circle"></i>Men Complex Day · 90 capsules</li>
+                            <li><i class="ph-fill ph-check-circle"></i>Men Complex Night · 60 capsules</li>
+                            <li class="lp-facts-total"><i class="ph-fill ph-flask"></i>18 active ingredients</li>
+                        </ul>
+                    </div>
+
+                    <div class="lp-offer__panel" data-package-picker>
+                        <span class="eyebrow">Premium Male Vitality Pack</span>
+                        <h2 class="lp-offer__title">Choose your supply</h2>
+                        <p class="lp-offer__lead">Plant actives work best with consistent use, so most men choose two or three months.</p>
+
+                        <div class="lp-packs" role="radiogroup" aria-label="Package length">
+                            <label class="lp-pack">
+                                <input type="radio" name="package" value="1" data-price="15,990" data-name="1-month package">
+                                <span class="lp-pack__main"><span class="lp-pack__name">1 month</span><span class="lp-pack__meta">Try the routine</span></span>
+                                <span class="lp-pack__price"><strong>15,990 Ft</strong><s>18,980 Ft</s></span>
+                            </label>
+                            <label class="lp-pack is-selected">
+                                <span class="lp-pack__flag">Most popular</span>
+                                <input type="radio" name="package" value="2" data-price="25,990" data-name="2-month package" checked>
+                                <span class="lp-pack__main"><span class="lp-pack__name">2 months <em>Save 19%</em></span><span class="lp-pack__meta">12,995 Ft / month · free shipping</span><span class="lp-pack__guarantee"><i class="ph-fill ph-shield-check"></i>60-day guarantee</span></span>
+                                <span class="lp-pack__price"><strong>25,990 Ft</strong><s>31,980 Ft</s></span>
+                            </label>
+                            <label class="lp-pack">
+                                <span class="lp-pack__flag lp-pack__flag--value">Best value</span>
+                                <input type="radio" name="package" value="3" data-price="35,990" data-name="3-month package">
+                                <span class="lp-pack__main"><span class="lp-pack__name">3 months <em>Save 25%</em></span><span class="lp-pack__meta">11,997 Ft / month · free shipping</span><span class="lp-pack__guarantee"><i class="ph-fill ph-shield-check"></i>60-day guarantee</span></span>
+                                <span class="lp-pack__price"><strong>35,990 Ft</strong><s>47,970 Ft</s></span>
+                            </label>
+                        </div>
+
+                        <button class="btn btn--primary btn--block lp-offer__cta" type="button" data-add-to-cart data-track="offer-cta"><span>Add to cart · <span data-package-price>25,990 Ft</span></span> <i class="ph-bold ph-shopping-bag"></i></button>
+
+                        <ul class="lp-offer__terms">
+                            <li data-term="shipping"><i class="ph ph-truck"></i>Free GLS Premium shipping</li>
+                            <li data-term="guarantee"><i class="ph ph-shield-check"></i>60-day money-back guarantee</li>
+                            <li><i class="ph ph-lock-simple"></i>Secure payment · SimplePay</li>
+                        </ul>
+                        <p class="lp-offer__single">Only want the daytime formula? <a href="#" data-track="single-day">Men Complex Day on its own · 10,990 Ft</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== INGREDIENTS (4 key ingredient tiles; full lists fold open) ===================== -->
+        <section class="section lp-doses" id="ingredients">
+            <div class="container lp-doses__container">
+                <div class="section-head section-head--center reveal">
+                    <span class="eyebrow">What's inside</span>
+                    <h2 class="section-head__title">Exact doses, nothing hidden</h2>
+                    <p class="section-head__lead">The key actives of the package, with every other ingredient and its dose one tap away.</p>
+                </div>
+
+                <!-- Four key ingredients as tiles; the rest of both labels folds open below (collapsed by default). -->
+                <div class="lp-keyings">
+                    <article class="lp-keying reveal">
+                        <div class="lp-keying__media"><img src="images/ingredient-amino-acids.webp?v=d30bbe3cb0" alt="Foods rich in L-citrulline" loading="lazy"><span class="lp-keying__dose">600 mg</span></div>
+                        <div class="lp-keying__body"><h3>L-citrulline</h3><p class="lp-keying__text">Amino acid naturally found in watermelon</p><span class="lp-keying__tag"><i class="ph-fill ph-sun"></i>Day</span></div>
+                    </article>
+                    <article class="lp-keying reveal">
+                        <div class="lp-keying__media"><img src="images/ingredient-maca-root.webp?v=63c967e153" alt="Maca root" loading="lazy"><span class="lp-keying__dose">300 mg</span></div>
+                        <div class="lp-keying__body"><h3>Maca 10:1</h3><p class="lp-keying__text">Concentrated root extract from the Peruvian Andes</p><span class="lp-keying__tag"><i class="ph-fill ph-sun"></i>Day</span></div>
+                    </article>
+                    <article class="lp-keying reveal">
+                        <div class="lp-keying__media"><img src="images/ingredient-ashwagandha-leaves.webp?v=c047e57d7d" alt="Ashwagandha leaves" loading="lazy"><span class="lp-keying__dose">20 + 24 mg</span></div>
+                        <div class="lp-keying__body"><h3>KSM-66® Ashwagandha</h3><p class="lp-keying__text">Clinically studied, full-spectrum root extract</p><span class="lp-keying__tag lp-keying__tag--both"><i class="ph-fill ph-clock"></i>Day + Night</span></div>
+                    </article>
+                    <article class="lp-keying reveal">
+                        <div class="lp-keying__media"><img src="images/ingredient-pumpkin-seeds.webp?v=7bda1d966d" alt="Pumpkin seeds" loading="lazy"><span class="lp-keying__dose">10 mg · 100% NRV</span></div>
+                        <div class="lp-keying__body"><h3>Zinc</h3><p class="lp-keying__text">Contributes to normal testosterone levels in the blood</p><span class="lp-keying__tag lp-keying__tag--night"><i class="ph-fill ph-moon"></i>Night</span></div>
+                    </article>
+                </div>
+
+                <details class="lp-more reveal">
+                    <summary><i class="ph-bold ph-plus"></i><span>See all 18 ingredients</span><i class="ph ph-caret-down lp-more__caret"></i></summary>
+                    <div class="lp-more__panel">
+                        <div class="lp-more__col">
+                            <h3><i class="ph-fill ph-sun"></i>Men Complex Day <span>6 actives · per 3 capsules · vegan DRcaps®</span></h3>
+                            <table class="lp-dose">
+                                <tr><th><span class="lp-dose__name"><img class="lp-dose__img" src="images/ingredient-amino-acids.webp?v=d30bbe3cb0" alt="" loading="lazy" width="44" height="44"><span class="lp-dose__label"><strong>L-citrulline DL-malate</strong><small>An amino acid naturally found in watermelon.</small></span></span></th><td>600 mg</td></tr>
+                                <tr><th><span class="lp-dose__name"><img class="lp-dose__img" src="images/ingredient-arginine.webp?v=283121be0e" alt="" loading="lazy" width="44" height="44"><span class="lp-dose__label"><strong>L-arginine HCl</strong><small>An amino acid found in nuts, seeds and legumes.</small></span></span></th><td>500 mg</td></tr>
+                                <tr><th><span class="lp-dose__name"><img class="lp-dose__img" src="images/ingredient-taurine.webp?v=d2670fcb50" alt="" loading="lazy" width="44" height="44"><span class="lp-dose__label"><strong>L-taurine</strong><small>An amino acid naturally present in seafood and meat.</small></span></span></th><td>400 mg</td></tr>
+                                <tr><th><span class="lp-dose__name"><img class="lp-dose__img" src="images/ingredient-maca-root.webp?v=63c967e153" alt="" loading="lazy" width="44" height="44"><span class="lp-dose__label"><strong>Maca 10:1</strong><small>A root from the Peruvian Andes, concentrated 10:1.</small></span></span></th><td>300 mg</td></tr>
+                                <tr><th><span class="lp-dose__name"><img class="lp-dose__img" src="images/ingredient-korean-ginseng.webp?v=ee8ce59790" alt="" loading="lazy" width="44" height="44"><span class="lp-dose__label"><strong>Korean ginseng 4:1</strong><small>A traditional Korean root, standardised to 4% ginsenosides.</small></span></span></th><td>200 mg</td></tr>
+                                <tr><th><span class="lp-dose__name"><img class="lp-dose__img" src="images/ingredient-ashwagandha-leaves.webp?v=c047e57d7d" alt="" loading="lazy" width="44" height="44"><span class="lp-dose__label"><strong>KSM-66® Ashwagandha</strong><small>A full-spectrum root extract, equal to 240 mg of dried root.</small></span></span></th><td>20 mg</td></tr>
+                            </table>
+                            <!-- Row texts: vitamins/minerals use EU-authorised claims; plant extracts and amino acids are descriptive only (no effect claims).
+                                 [COMPLIANCE-CHECK] Pharmacist-approved maca wording goes here verbatim once received. -->
+                            <p class="lp-dose-card__note">Plant extracts and amino acids, no added vitamins or minerals.</p>
+                        </div>
+                        <div class="lp-more__col">
+                            <h3><i class="ph-fill ph-moon"></i>Men Complex Night <span>12 actives · per 2 capsules</span></h3>
+                            <table class="lp-dose">
+                                <tr><th><span class="lp-dose__name"><img class="lp-dose__img" src="images/ingredient-pumpkin-seeds.webp?v=7bda1d966d" alt="" loading="lazy" width="44" height="44"><span class="lp-dose__label"><strong>Zinc</strong><small>Contributes to the maintenance of normal testosterone levels in the blood.</small></span></span></th><td>10 mg <em>100% NRV</em></td></tr>
+                                <tr><th><span class="lp-dose__name"><img class="lp-dose__img" src="images/ingredient-chia-seeds.webp?v=75f6331b52" alt="" loading="lazy" width="44" height="44"><span class="lp-dose__label"><strong>Magnesium</strong><small>Contributes to the reduction of tiredness and fatigue.</small></span></span></th><td>56.4 mg <em>15% NRV</em></td></tr>
+                                <tr><th><span class="lp-dose__name"><img class="lp-dose__img" src="images/ingredient-vitamin-b6.webp?v=5b3bcfa756" alt="" loading="lazy" width="44" height="44"><span class="lp-dose__label"><strong>Vitamin B6</strong><small>Contributes to the regulation of hormonal activity.</small></span></span></th><td>4.1 mg <em>293% NRV</em></td></tr>
+                                <tr><th><span class="lp-dose__name"><img class="lp-dose__img" src="images/ingredient-vitamin-d3.webp?v=949231716a" alt="" loading="lazy" width="44" height="44"><span class="lp-dose__label"><strong>Vitamin D3</strong><small>Contributes to normal muscle function.</small></span></span></th><td>2.5 µg <em>50% NRV</em></td></tr>
+                                <tr><th><span class="lp-dose__name"><img class="lp-dose__img" src="images/ingredient-vitamin-b12.webp?v=629440c221" alt="" loading="lazy" width="44" height="44"><span class="lp-dose__label"><strong>Vitamin B12</strong><small>Contributes to normal energy-yielding metabolism.</small></span></span></th><td>1.25 µg <em>50% NRV</em></td></tr>
+                                <tr><th><span class="lp-dose__name"><img class="lp-dose__img" src="images/ingredient-vitamin-a.webp?v=bcbda063da" alt="" loading="lazy" width="44" height="44"><span class="lp-dose__label"><strong>Vitamin A</strong><small>Contributes to the normal function of the immune system.</small></span></span></th><td>400 µg <em>50% NRV</em></td></tr>
+                                <tr><th><span class="lp-dose__name"><img class="lp-dose__img" src="images/ingredient-boron.webp?v=7ff83ba452" alt="" loading="lazy" width="44" height="44"><span class="lp-dose__label"><strong>Boron</strong><small>A trace mineral found in nuts and dried fruit.</small></span></span></th><td>10 mg</td></tr>
+                                <tr><th><span class="lp-dose__name"><img class="lp-dose__img" src="images/ingredient-saw-palmetto.webp?v=d735245a6e" alt="" loading="lazy" width="44" height="44"><span class="lp-dose__label"><strong>Saw palmetto 10:1</strong><small>A berry extract from the saw palmetto palm, concentrated 10:1.</small></span></span></th><td>150 mg</td></tr>
+                                <tr><th><span class="lp-dose__name"><img class="lp-dose__img" src="images/ingredient-fenugreek.webp?v=8d7bdff0b4" alt="" loading="lazy" width="44" height="44"><span class="lp-dose__label"><strong>Fenugreek</strong><small>A seed extract standardised to 50% saponins.</small></span></span></th><td>110 mg</td></tr>
+                                <tr><th><span class="lp-dose__name"><img class="lp-dose__img" src="images/ingredient-ashwagandha-leaves.webp?v=c047e57d7d" alt="" loading="lazy" width="44" height="44"><span class="lp-dose__label"><strong>KSM-66® Ashwagandha 12:1</strong><small>A full-spectrum root extract, equal to 240 mg of dried root.</small></span></span></th><td>24 mg</td></tr>
+                                <tr><th><span class="lp-dose__name"><img class="lp-dose__img" src="images/ingredient-grape-seed.webp?v=915728c2e8" alt="" loading="lazy" width="44" height="44"><span class="lp-dose__label"><strong>Grape seed</strong><small>An extract standardised to 90% proanthocyanidins.</small></span></span></th><td>35 mg</td></tr>
+                                <tr><th><span class="lp-dose__name"><img class="lp-dose__img" src="images/ingredient-black-pepper.webp?v=86fd6e2808" alt="" loading="lazy" width="44" height="44"><span class="lp-dose__label"><strong>Black pepper</strong><small>An extract standardised to 95% piperine.</small></span></span></th><td>5 mg</td></tr>
+                            </table>
+                        </div>
+                        <div class="lp-more__claims">
+                            <h3>Approved health claims</h3>
+                            <ul class="lp-claims">
+                                <li>Zinc contributes to the maintenance of normal testosterone levels in the blood.</li>
+                                <li>Zinc contributes to normal fertility and reproduction.</li>
+                                <li>Vitamin B6 contributes to the regulation of hormonal activity.</li>
+                                <li>Vitamin B6, vitamin B12 and magnesium contribute to the reduction of tiredness and fatigue.</li>
+                                <li>Magnesium and vitamin D3 contribute to normal muscle function.</li>
+                                <li>Zinc and vitamin D3 contribute to the normal function of the immune system.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </details>
+                <div class="lp-cta-row reveal">
+                    <a href="#offer" class="btn lp-cta-pulse" data-track="ingredients-cta"><span>Choose your package</span><i class="ph-bold ph-arrow-down"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== REVIEWS (featured + grid) ===================== -->
+        <!-- NOTE: placeholder copy for layout approval. Replace with 5-10 verified Judge.me reviews for this package. -->
+        <section class="section lp-reviews">
+            <div class="container lp-reviews__container">
+                <div class="lp-reviews__head reveal">
+                    <div>
+                        <span class="eyebrow">Reviews</span>
+                        <h2 class="section-head__title">What men say about the routine</h2>
+                    </div>
+                    <div class="lp-reviews__score"><strong>4.8</strong><div><span class="stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star-half"></i></span><span>25,000+ customers</span></div></div>
+                </div>
+                <div class="lp-reviews__grid">
+                    <article class="lp-review lp-review--featured lp-hex reveal">
+                        <i class="ph-fill ph-quotes lp-review__mark"></i>
+                        <p>"I run a company and I'm on from 7 to 7. The afternoons are noticeably better, and the evening capsules are just part of going to bed now."</p>
+                        <span class="lp-review__who"><span class="lp-review__avatar">G</span><span><strong>Gábor, 45</strong>Verified · 3-month package</span></span>
+                    </article>
+                    <article class="lp-review reveal"><span class="stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></span><p>"Physical work all day. I liked that it's two clear steps, morning and night, and I can see exactly what's in each."</p><span class="lp-review__who"><span class="lp-review__avatar">Z</span><span><strong>Zoltán, 38</strong>Verified · 2-month package</span></span></article>
+                    <article class="lp-review reveal"><span class="stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></span><p>"I gave it the full two months as recommended. More drive, better mornings. Ordering the 3-month one now."</p><span class="lp-review__who"><span class="lp-review__avatar">B</span><span><strong>Balázs, 52</strong>Verified · 2-month package</span></span></article>
+                    <article class="lp-review reveal"><span class="stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star-half"></i></span><p>"Clear doses on the label and made in Hungary, that's why I tried it. Delivery arrived the next day."</p><span class="lp-review__who"><span class="lp-review__avatar">P</span><span><strong>Péter, 49</strong>Verified · 1-month package</span></span></article>
+                    <article class="lp-review reveal"><span class="stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></span><p>"Three with breakfast, two before bed. No thinking about it. That's the only kind of routine I actually keep."</p><span class="lp-review__who"><span class="lp-review__avatar">T</span><span><strong>Tamás, 41</strong>Verified · 3-month package</span></span></article>
+                </div>
+                <div class="lp-cta-row reveal">
+                    <a href="#offer" class="btn lp-cta-pulse" data-track="reviews-cta"><span>Choose your package</span><i class="ph-bold ph-arrow-down"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== QUALITY PROOF (photo band with glass card) ===================== -->
+        <section class="lp-proof">
+            <img class="lp-proof__bg" src="images/standard-lab-quality-testing.webp?v=c02988e3ae" alt="Lab technician testing samples" loading="lazy">
+            <div class="container lp-proof__container">
+                <div class="lp-proof__card reveal">
+                    <span class="eyebrow eyebrow--light">Quality you can check</span>
+                    <h2 class="lp-proof__title">Tested by Eurofins, made in Hungary</h2>
+                    <!-- TODO (client): confirm what is tested (finished product or raw material) and which document can be shown. -->
+                    <p class="lp-proof__text">Active ingredients are verified by Eurofins, an accredited laboratory. Every formula is produced in Hungary in an ISO 22000, HACCP and GMP certified facility.</p>
+                    <ul class="lp-proof__list">
+                        <li><i class="ph-bold ph-check"></i>Exact doses on every label</li>
+                        <li><i class="ph-bold ph-check"></i>Vegan, gluten free, lactose free</li>
+                        <li><i class="ph-bold ph-check"></i>Notified food supplement</li>
+                    </ul>
+                    <div class="lp-proof__actions">
+                        <a href="#offer" class="btn lp-cta-pulse" data-track="proof-cta"><span>Choose your package</span><i class="ph-bold ph-arrow-down"></i></a>
+                        <a href="#" class="btn btn--light" data-track="lab-results">View laboratory results <i class="ph-bold ph-caret-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== FAQ (single centred column) ===================== -->
+        <section class="section lp-faq" id="faq">
+            <div class="container lp-faq__container">
+                <div class="section-head section-head--center reveal">
+                    <span class="eyebrow">Questions</span>
+                    <h2 class="section-head__title">Before you order</h2>
+                </div>
+                <div class="accordion lp-faq__list" data-accordion>
+                    <div class="accordion__item is-open">
+                        <button class="accordion__trigger" type="button" aria-expanded="true">Does it really affect testosterone?<i class="ph ph-plus"></i></button>
+                        <div class="accordion__panel"><p class="accordion__text">The daily dose of Night contains 10 mg of zinc, 100% of the daily reference value. Zinc contributes to the maintenance of normal testosterone levels in the blood. It is not a hormone and not a medicine.</p></div>
+                    </div>
+                    <div class="accordion__item">
+                        <button class="accordion__trigger" type="button" aria-expanded="false">Why are there separate day and night products?<i class="ph ph-plus"></i></button>
+                        <div class="accordion__panel"><p class="accordion__text">Because the day and the night ask different things of you. Day is built on plant extracts and amino acids for long, demanding days; Night carries the zinc, vitamins and minerals for the evening and overnight part of the routine.</p></div>
+                    </div>
+                    <div class="accordion__item">
+                        <button class="accordion__trigger" type="button" aria-expanded="false">Can I use just one of them?<i class="ph ph-plus"></i></button>
+                        <div class="accordion__panel"><p class="accordion__text">Yes, both are available on their own. The testosterone support comes from the zinc in Night, so if that's your focus, the package gives you both halves of the routine at a better price.</p></div>
+                    </div>
+                    <div class="accordion__item">
+                        <button class="accordion__trigger" type="button" aria-expanded="false">How do I take it, and for how long?<i class="ph ph-plus"></i></button>
+                        <div class="accordion__panel"><p class="accordion__text">3 capsules of Men Complex Day after breakfast and 2 capsules of Night before bed, with water. Plant actives work best with consistent use, so we recommend at least two months.</p></div>
+                    </div>
+                    <div class="accordion__item">
+                        <button class="accordion__trigger" type="button" aria-expanded="false">When can I expect a noticeable change?<i class="ph ph-plus"></i></button>
+                        <div class="accordion__panel"><p class="accordion__text">Everyone is different. Most customers give the routine a full 30 days before judging, which is why the 2- and 3-month packages are the most popular.</p></div>
+                    </div>
+                    <div class="accordion__item">
+                        <button class="accordion__trigger" type="button" aria-expanded="false">Can it be taken alongside medication?<i class="ph ph-plus"></i></button>
+                        <div class="accordion__panel"><p class="accordion__text">If you take any medication or have a medical condition, please ask your doctor or pharmacist before starting any food supplement.</p></div>
+                    </div>
+                    <div class="accordion__item">
+                        <button class="accordion__trigger" type="button" aria-expanded="false">What if it doesn't work for me?<i class="ph ph-plus"></i></button>
+                        <div class="accordion__panel"><p class="accordion__text">The 2- and 3-month packages come with a 60-day money-back guarantee. If you're not satisfied, contact us and we'll refund you.</p></div>
+                    </div>
+                    <div class="accordion__item">
+                        <button class="accordion__trigger" type="button" aria-expanded="false">How long does delivery take?<i class="ph ph-plus"></i></button>
+                        <div class="accordion__panel"><p class="accordion__text">We ship with GLS Premium and most orders arrive the next working day, in plain packaging. Shipping is free on orders over 19,000 Ft, which includes the 2- and 3-month packages.</p></div>
+                    </div>
+                </div>
+                <div class="lp-cta-row reveal">
+                    <a href="#offer" class="btn lp-cta-pulse" data-track="faq-cta"><span>Choose your package</span><i class="ph-bold ph-arrow-down"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== FINAL CTA (guarantee band) ===================== -->
+        <section class="lp-final">
+            <div class="container lp-final__container">
+                <div class="lp-final__seal reveal"><i class="ph-fill ph-shield-check"></i><strong>60</strong><span>day guarantee</span></div>
+                <div class="lp-final__content reveal">
+                    <h2 class="lp-final__title">Energy by day. Testosterone support by night.</h2>
+                    <p class="lp-final__text">Start the 24-hour routine today. Free shipping and a 60-day money-back guarantee on 2- and 3-month packages.</p>
+                </div>
+                <a href="#offer" class="btn btn--light reveal" data-track="final-cta">Choose your package <i class="ph-bold ph-caret-up"></i></a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===================== FOOTER (legal) ===================== -->
+    <footer class="lp-footer">
+        <div class="container lp-footer__container">
+            <p class="lp-footer__legal"><i class="ph ph-info"></i>Food supplements are not a substitute for a balanced, varied diet and a healthy lifestyle. Keep out of reach of children. Do not exceed the recommended daily dose.</p>
+            <div class="lp-footer__bottom">
+                <p>© 2026, Nutrimind® Ltd. · 1027 Budapest, Csalogány Street 3/C · <a href="mailto:info@nutrimind.hu">info@nutrimind.hu</a></p>
+                <ul>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===================== STICKY BUY BAR (mobile; appears once the hero is passed) ===================== -->
+    <div class="lp-sticky" data-sticky-cta aria-hidden="true">
+        <img class="lp-sticky__thumb" src="images/men-bundle-day-night-bottles.webp?v=0557ed3ac0" alt="" loading="lazy">
+        <div class="lp-sticky__info">
+            <span class="lp-sticky__label">Premium Male Vitality Pack</span>
+            <strong data-sticky-name>2-month package</strong>
+        </div>
+        <div class="lp-sticky__price">
+            <strong data-sticky-price>25,990 Ft</strong>
+            <span><i class="ph-fill ph-truck"></i>Delivered next working day</span>
+        </div>
+        <a href="#offer" class="btn btn--primary btn--sm" data-track="sticky-cta" tabindex="-1">Order now <i class="ph-bold ph-caret-right"></i></a>
+    </div>
+
+    <div class="toast" data-toast role="status" aria-live="polite"><i class="ph-fill ph-check-circle"></i><span data-toast-text>Added to cart</span></div>
+
+    <script src="js/script.js?v=32154dd02f"></script>
+</body>
+</html>
