@@ -15,7 +15,16 @@
     <link rel="stylesheet" href="https://nutrimind-chi.vercel.app/css/style.css?v=02dbe5901d">
     <link rel="stylesheet" href="https://nutrimind-chi.vercel.app/css/responsive.css?v=8a86c5f655">
     <meta name="robots" content="noindex,nofollow">
-<style>.page-body .prose{max-width:760px}</style>
+<style>
+.page-body .prose.story{max-width:880px;margin:0 auto;text-align:center;gap:28px;align-items:center}
+.prose.story h2{margin-top:0;font-size:var(--fs-h3)}
+.prose.story .statement{font-size:clamp(21px,2.5vw,30px);line-height:1.4;letter-spacing:-.01em;color:var(--color-ink);margin:0}
+.prose.story .statement strong{font-weight:inherit;background-image:linear-gradient(#acbbd1,#acbbd1);background-repeat:no-repeat;background-position:0 100%;background-size:100% .38em}
+.prose.story .story__facts{list-style:none;padding:0;margin:4px 0;display:flex;flex-wrap:wrap;justify-content:center;gap:10px 28px;font-size:var(--fs-16)}
+.prose.story .story__facts li{display:flex;align-items:center;gap:8px}
+.prose.story .story__facts i{color:var(--color-brand)}
+.prose.story .story__sign{font-size:var(--fs-16);color:var(--color-muted);margin-top:8px}
+</style>
 </head>
 <!-- INFO PAGE (Shopify page template mockup): About us / Rólunk. Live URL: nutrimind.hu/pages/rolunk.
      Header, drawer and footer are copied from product.html; content translated from the live page. -->
@@ -235,17 +244,14 @@
  <div class="page-hero__text"><span class="eyebrow">Rólunk</span>
  <h1 class="page-hero__title">Olyan terméket akartam, amit én magam is nyugodt szívvel szedek.</h1>
  <p class="page-hero__lead">Az életemnek kezdettől fogva része volt a sport és az egészséges táplálkozás. Mindig is érdekeltek a vitaminok és a növényi kivonatok és az is, hogyan hozhatunk ki még többet a szervezetünkből, hogyan működhetünk még jobban.</p></div></div></section>
-<section class="page-body"><div class="container page-body__container"><article class="prose">
+<section class="page-body"><div class="container page-body__container"><article class="prose story">
  <h2>A rohanó hétköznapok ára</h2>
- <p>A mai világ tempója mindannyiunkra hatással van. Sok munka, folyamatos stressz, kevés alvás, kapkodva bekapott, sokszor ultrafeldolgozott ételek. Ilyen napok mellett egyre nehezebb mindent megadni a szervezetünknek, amire szüksége van.</p>
- <h2>Amit hiányoltam</h2>
- <p>Észrevettem, hogy nehéz olyan terméket találni a piacon, ami valóban jó minőségű, nem spórol a hatóanyagon, a hatóanyagait pedig be is vizsgálták.</p>
- <h2>Ezért hoztam létre a Nutrimindot</h2>
- <p>Teljesen átlátható termékeket akartam. Pontosan tudom, mi van bennük, honnan származik és milyen minőségű. A hatóanyagokat úgy válogattuk össze, hogy jól működjenek együtt.</p>
- <ul><li>Pontos adagok a címkén, titkos keverékek nélkül</li><li>Az Eurofins akkreditált laborjában bevizsgálva</li><li>Magyarországon fejlesztve és gyártva</li></ul>
- <h2>A célom</h2>
- <p>Hogy az egészséges életmód minél több emberhez eljusson. Ehhez olyan segítséget szeretnék adni, amiben megbízhatsz.</p>
- <p><em>Sebők Péter, a Nutrimind alapítója</em></p>
+ <p class="statement">A mai világ tempója mindannyiunkra hatással van. Sok munka, folyamatos stressz, kevés alvás, kapkodva bekapott, sokszor ultrafeldolgozott ételek. Ilyen napok mellett <strong>egyre nehezebb mindent megadni a szervezetünknek</strong>, amire szüksége van.</p>
+ <p class="statement">Észrevettem, hogy nehéz olyan terméket találni a piacon, ami <strong>valóban jó minőségű</strong>, <strong>nem spórol a hatóanyagon</strong>, a hatóanyagait pedig <strong>be is vizsgálták</strong>.</p>
+ <p class="statement">Ezért hoztam létre a Nutrimindot: <strong>teljesen átlátható termékeket</strong> akartam. Pontosan tudom, mi van bennük, honnan származik és milyen minőségű. A hatóanyagokat úgy válogattuk össze, hogy <strong>jól működjenek együtt</strong>.</p>
+ <ul class="story__facts"><li><i class="ph-bold ph-check"></i>Pontos adagok a címkén, titkos keverékek nélkül</li><li><i class="ph-bold ph-check"></i>Az Eurofins akkreditált laborjában bevizsgálva</li><li><i class="ph-bold ph-check"></i>Magyarországon fejlesztve és gyártva</li></ul>
+ <p class="statement">A célom, hogy <strong>az egészséges életmód minél több emberhez eljusson</strong>. Ehhez olyan segítséget szeretnék adni, <strong>amiben megbízhatsz</strong>.</p>
+ <p class="story__sign"><em>Sebők Péter, a Nutrimind alapítója</em></p>
 </article></div></section>
 </main>
 
